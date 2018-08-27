@@ -1,0 +1,420 @@
+
+@font-face {
+    font-family: 'PingFang-SC-Medium';
+    src: url("../fonts/PingFang-SC/PingFang-SC-Medium.woff") format("woff");
+    }
+    
+body {
+    background-color: #f9f9fb;
+    font-family: 'PingFang-SC-Medium';
+}
+.header-content {
+    margin-bottom: 0.1389rem;
+}
+.header-content-title {
+    line-height: 1.5278rem;
+    margin-top: 1.3889rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-content::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/works/Workpagebg.png') no-repeat;
+    background-size: cover;
+    height: 4.1667rem;
+    width: 100%;
+    z-index: 100;
+
+    /* 替换背景图，用绝对定位写了一套背景定位元素 */
+    display: none;
+}
+
+
+/* header部分背景图定位 */
+.header-webbg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+}
+.header-webbg .icon-1 {
+    background: url('../img/works/Rectangle\ Copy\ 5@2x.png');
+    background-size: 0.0903rem 0.0903rem;
+    width: 0.0903rem;
+    height: 0.0903rem;
+    position: absolute;
+    left: 0.9306rem;
+    top: 2.3125rem;
+    animation: slide-20 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(50px)
+}
+.header-webbg .icon-2 {
+    background: url('../img/works/Rectangle\ Copy\ 3@2x.png');
+    background-size: 0.1319rem 0.1319rem;
+    width: 0.1319rem;
+    height: 0.1319rem;
+    position: absolute;
+    left: 1.7778rem;
+    top: 1.4653rem;
+    animation: slide-80 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(200px)
+}
+.header-webbg .icon-3 {
+    background: url('../img/works/Rectangle\ Copy\ 4@2x.png');
+    background-size: 0.0903rem 0.0903rem;
+    width: 0.0903rem;
+    height: 0.0903rem;
+    position: absolute;
+    left: 2.2014rem;
+    top: 1.6667rem;
+    animation: slide-40 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(100px)
+}
+.header-webbg .icon-4 {
+    background: url('../img/works/Oval\ Copy\ 10@2x.png');
+    background-size: 0.2361rem 0.2361rem;
+    width: 0.2361rem;
+    height: 0.2361rem;
+    position: absolute;
+    left: 3.4028rem;
+    top: 1.375rem;
+    animation: slide-60 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(150px)
+}
+.header-webbg .icon-5 {
+    background: url('../img/works/Group\ 5@2x.png');
+    background-size: 0.9583rem 0.9583rem;
+    width: 0.9583rem;
+    height: 0.9583rem;
+    position: absolute;
+    left: 6.2014rem;
+    top: 1.3681rem;
+    animation: slide-20 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(50px)
+}
+.header-webbg .icon-6 {
+    background: url('../img/works/Group\ 5\ Copy@2x.png');
+    background-size: 0.4375rem 0.4375rem;
+    width: 0.4375rem;
+    height: 0.4375rem;
+    position: absolute;
+    left: 6.5694rem;
+    top: 1.5278rem;
+    animation: slide-80 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(200px)
+}
+.header-webbg .icon-7 {
+    background: url('../img/works/Rectangle\ Copy\ 2@2x.png');
+    background-size: 0.0833rem 0.0764rem;
+    width: 0.0833rem;
+    height: 0.0764rem;
+    position: absolute;
+    left: 7.875rem;
+    top: 2.1181rem;
+    animation: slide-60 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(150px)
+}
+.header-webbg .icon-8 {
+    background: url('../img/works/Rectangle\ Copy@2x.png');
+    background-size: 0.1319rem 0.1319rem;
+    width: 0.1319rem;
+    height: 0.1319rem;
+    position: absolute;
+    left: 8.5417rem;
+    top: 1.7986rem;
+    animation: slide-40 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(100px)
+}
+.header-webbg .icon-9 {
+    background: url('../img/works/Oval\ Copy\ 8@2x.png');
+    background-size: 0.5069rem 0.5069rem;
+    width: 0.5069rem;
+    height: 0.5069rem;
+    position: absolute;
+    left: 1.6597rem;
+    top: 2rem;
+    animation: slide-20 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(50px)
+}
+.header-webbg .icon-10 {
+    background: url('../img/works/Oval\ Copy\ 9@2x.png');
+    background-size: 0.2778rem 0.2778rem;
+    width: 0.2778rem;
+    height: 0.2778rem;
+    position: absolute;
+    left: 1.9653rem;
+    top: 1.9306rem;
+    animation: slide-80 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(200px)
+}
+}
+
+.header-content-title {
+    text-align: center;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 8.0556rem;
+    margin: auto;
+    justify-content: space-between;
+}
+.works-item {
+    width: 3.8889rem;
+    height: 2.8333rem;
+    background-color: #ccc;
+    box-shadow:0.0556rem 0.0556rem 0.2083rem 0rem rgba(215,215,225,0.4);
+    border-radius: 0.1111rem;
+    margin-top: 0.2778rem;
+    background:rgba(255,255,255,1); 
+}
+/* img与h3之间存在8像素距离 */
+.works-item-img {
+    max-width: 3.8889rem; 
+}
+.works-item-titile {
+    margin-top: 0.1111rem;
+    margin-left: 0.125rem;
+    margin-bottom: 0.1528rem;
+    font-size: 0.1389rem;
+    line-height: 1.5;
+    /* font-family: 'Interstate-Regular' */
+}
+
+.works-item-tail {
+    display: flex;
+    justify-content: space-between;
+    align-items: content;
+    border-top: 0.0069rem solid rgba(219,220,230,0.4);
+    margin-left: 0.0903rem;
+    margin-right: 0.0903rem;
+    padding-top: 0.0903rem;
+}
+.works-item-tail img {
+    width: 50%;
+}
+.works-item-tail  .img-ct2 {
+    margin-top: -0.0069rem;
+}
+.works-item-tail  .img-ct3 {
+    margin-top: -0.0208rem;
+}
+.works-item-tail  .img-ct4 {
+    margin-top: -0.0764rem;
+}
+.works-item-tail  .img-ct6 {
+    margin-top: -0.0139rem;
+}
+/* .works-item-tail .img-scale {
+    width: 50%;
+} */
+.works-item-taillist {
+    display: flex;
+    justify-content: space-between;
+    font-family:PingFangSC-Medium;
+    color:rgba(95,75,139,1);
+}
+.works-item-taillist .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.0694rem;
+    line-height: 1.4;
+    width:0.5694rem;
+    height:0.1667rem;
+    background:rgba(95,75,139,0.2);
+    border-radius:0.0972rem;
+    margin-left: 0.0903rem;
+
+}
+.works-item-taillist .diff {
+    color:rgba(139,139,160,1);
+}
+
+
+@media screen and (max-width: 750px) {
+    body {
+        width: inherit;
+    }
+    h3 {
+        margin: 0;
+    }
+    .web {
+        display: none;
+    }
+    .wap {
+        position: static;
+    }
+    .wap-server-item {
+        display: none;
+    }
+
+    .header-content-title {
+        /* 重置关联server.css样式 */
+        line-height: inherit;
+        max-width: inherit;
+        margin: inherit;
+        height: inherit;
+
+        /* 定义works页面移动端样式 */
+        margin-top: 6.4rem;
+    }
+    .header-wapbg .icon-1 {
+        background: url('../img/../img/works/Rectangle\ Copy\ 5@3x.png');
+        background-size: .2666rem .2666rem;
+        width: .2666rem;
+        height: .2666rem;
+        position: absolute;
+        left: .5333rem;
+        top: 7.9733rem;
+    }
+    .header-wapbg .icon-2 {
+        background: url('../img/works/Rectangle\ Copy\ 3@3x.png');
+        background-size: .3866rem .3866rem;
+        width: .3866rem;
+        height: .3866rem;
+        position: absolute;
+        left: 2.2133rem;
+        top: 4.3466rem;
+    }
+    .header-wapbg .icon-3 {
+        background: url('../img/works/Rectangle\ Copy\ 4@3x.png');
+        background-size: .2666rem .2666rem;
+        width: .2666rem;
+        height: .2666rem;
+        position: absolute;
+        left: 258px;
+        top: 370px;
+    }
+    .header-wapbg .icon-4 {
+        background: url('../img/works/Oval\ Copy\ 10@3x.png');
+        background-size: 51px 51px;
+        width: 51px;
+        height: 51px;
+        position: absolute;
+        left: 6.8933rem;
+        top: 4.0933rem;
+    }
+    .header-wapbg .icon-5 {
+        background: url('../img/works/Group\ 5@3x.png');
+        background-size: 2.76rem 2.76rem;
+        width: 2.76rem;
+        height: 2.76rem;
+        position: absolute;
+        left: 6.24rem;
+        top: 9.7066rem;
+    }
+    .header-wapbg .icon-6 {
+        background: url('../img/works/Group\ 5\ Copy@3x.png');
+        background-size: 1.2533rem 1.2533rem;
+        width: 1.2533rem;
+        height: 1.2533rem;
+        position: absolute;
+        left: 7.2933rem;
+        top: 10.16rem;
+    }
+    .header-wapbg .icon-7 {
+        background: url('../img/works/Rectangle\ Copy\ 2@3x.png');
+        background-size: .24rem .2266rem;
+        width: .24rem;
+        height: .2266rem;
+        position: absolute;
+        left: 6.9466rem;
+        top: 8.7866rem;
+    }
+    .header-wapbg .icon-8 {
+        background: url('../img/works/Rectangle\ Copy@3x.png');
+        background-size: .3866rem .3866rem;
+        width: .3866rem;
+        height: .3866rem;
+        position: absolute;
+        left: 8.8666rem;
+        top: 7.8666rem;
+    }
+    .header-wapbg .icon-9 {
+        background: url('../img/works/Oval\ Copy\ 8@3x.png');
+        background-size: 1.4666rem 1.4666rem;
+        width: 1.4666rem;
+        height: 1.4666rem;
+        position: absolute;
+        left: 1.8933rem;
+        top: 8.1333rem;
+    }
+    .header-wapbg .icon-10 {
+        background: url('../img/works/Oval\ Copy\ 9@3x.png');
+        background-size: .8rem .8rem;
+        width: .8rem;
+        height: .8rem;
+        position: absolute;
+        left: 2.7733rem;
+        top: 7.9333rem;
+    }
+
+    .works {
+        margin-top: .8rem;
+    }
+    .works-item {
+        width: 8.9333rem;
+        height: 7.3333rem;
+    }
+    .works-item-img {
+        max-width: inherit;
+        width: 8.9333rem;
+    }
+    .works-item-titile {
+        margin-top: .44rem;
+        margin-left: .2666rem;
+        margin-bottom: .56rem;
+        font-size: .4266rem;
+        line-height: 1.125;
+    }
+    .works-item-tail {
+        padding-top: .24rem;
+        align-items: center;
+    }
+    .works-item-tail .img-ct1 img {
+        width: 3.1733rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct2 img {
+        width: 2.2933rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct3 img {
+        width: 1.44rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct4 img {
+        width: 1.5466rem;
+        height: .8266rem;
+    }
+    .works-item-tail .img-ct5 img {
+        width: 2.6266rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct6 img {
+        width: 1.8133rem;
+        height: .5866rem;
+    }
+    .works-item-taillist .show-web {
+        display: none;
+    }
+    .works-item-taillist .diff {
+        color: inherit;
+    }
+    .works-item-taillist .sign {
+        font-size: .3333rem;
+        line-height: .4533rem;
+        width: 2.7066rem;
+        height: .7866rem;
+        background: rgba(223,219,232,1);
+        border-radius: .4666rem;
+        margin-right: .2666rem;
+        font-weight: 500;
+    }
+    
+}

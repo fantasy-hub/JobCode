@@ -1,0 +1,27 @@
+@mixin  shop__icon--size {
+    display: inline-block;
+    width: 0.0677rem;
+    height: 0.0677rem;
+    margin-right: .02rem; 
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes breath {
+    to  { transform: scale(1) }
+    50% { transform: scale(1.1) }
+    from { transform: scale(1) }
+}
+@keyframes left-arrow {
+    0%  { transform: translateX(0) }
+    70% { transform: translateX(-0.01rem) }
+    100% { transform: translateX(0) }
+}

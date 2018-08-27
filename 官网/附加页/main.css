@@ -1,0 +1,483 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+/* 设置默认字体 */
+html,
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px "PingFangSC", "微软雅黑", "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; 
+    /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+a { text-decoration: none; color: inherit; }
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.header {
+    position: fixed;
+    box-sizing: border-box;
+    height: 160px;
+    width: 100%;
+    padding: 0 120px;
+    padding-top: 80px;
+    z-index: 100;
+    transition: all .5s;
+}
+.logo {
+    background: url('../img/Asteroid小行星_Logo_White-03.svg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    transition: all .5s;
+}
+.nav {
+    color: #fff;
+    float: right;
+    height: 80px;
+    /* font-weight: bold; */
+    
+}
+.nav-list {
+    line-height: 80px;
+    list-style: none;
+    font-size: 18px;
+    transition: all .5s;
+}
+.nav-list li {
+    float: left;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+
+
+.main {
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+/* site navigation */
+
+.vertical-line {
+    position: fixed;
+    bottom: 0;
+    right: 10rem;
+    background-color: #fff;
+    opacity: .3;
+    display: block;
+    width:0.05rem;
+    height:18rem;
+    z-index: 100;
+}
+.site-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10rem;
+    width: 1.33rem;
+    z-index: 100;
+}
+.site-nav li {
+    width:0.83rem;
+    height:0.17rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    float: right;
+    list-style: none;
+}
+
+
+.site-nav .site-active {
+    width:1.33rem;
+    height:0.25rem;
+    background-color: #fff;
+}
+
+/* 内容部分 */
+/* page1 */
+.box1 {
+    background: url('../img/timg@2x.png') no-repeat;
+    background-size: cover;
+    padding: 0 10rem;
+    color: #fff;
+    height: 100%;
+}
+.content {
+    color: #fff;
+    position: absolute;
+    bottom: 10rem;
+}
+.con-title {
+    width:34.42rem;
+    height:5.17rem;
+    font-size:3.67rem;
+    line-height:5.17rem;
+    
+}
+.con-list {
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+.con-list li{
+    float: left;
+    font-size: 1.33rem;
+    padding-left: 1.5rem;
+    margin-left: 3.5rem;
+}
+.con-list li:nth-of-type(1) {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+/* twe page */
+.box2 {
+    background: #fff;
+    /* padding: 0;
+    color: #000; */
+    height: 100%;
+}
+
+.artboard-tab,
+.artboard3-copy,
+.artboard2-copy,
+.artboard-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    z-index: 100;
+}
+.art-title {
+    font-size: 1.33rem;
+   
+}
+.art-title .num {
+    padding-right: 2.5rem;
+}
+.art-fut {
+    font-size: 4rem;
+    /* max-width: 40rem; */
+}
+.art-content {
+    margin: 7rem 0 0 4.5rem;
+}
+.art-desc {
+    padding-top: 2rem;
+    /* max-width: 32rem; */
+    font-size: 1.17rem;
+}
+.none-bg {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    /* padding: 0 10rem; */
+    height: 100%;
+}
+.show-bg {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: url('../img/ATT@2x.png')  no-repeat;
+    background-size:  cover;
+}
+
+/* page3 */
+.box3 {
+    background: url('../img/yikai_bg.png') no-repeat;
+    background-size: cover;
+    /* padding: 0 10rem; */
+    color: #fff;
+    height: 100%;
+}
+.artboard2-copy .art-content {
+    /* max-width: 33rem; */
+}
+.artboard2-copy .art-fut {
+    font-size: 3rem;
+}
+.imac {
+    position: absolute;
+
+    top: 25%;
+    right: 15rem;
+   
+}
+.imac .iphone {
+    position: absolute;
+    bottom: 3.5rem;
+    right: -3.5rem;
+}
+
+/* page4 */
+.box4 {
+    background: url('../img/film.png') no-repeat;
+    background-size: cover;
+    /* padding: 0 10rem; */
+    color: #fff;
+    height: 100%;
+}
+.artboard3-copy .art-content {
+    /* max-width: 27rem; */
+}
+.artboard3-copy .art-fut {
+    font-size: 3rem;
+}
+/* page5 */
+.box5 {
+    background-color: #fff;
+    height: 100%;
+}
+.box5 .show-bg {
+    background: url('../img/Screen.png')  no-repeat;
+    background-size:  cover;
+}
+
+.box5  .none-bg .art-fut{
+    /* max-width: 42rem; */
+    font-size: 3.33rem;
+} 
+/* page6 */
+.box6 {
+    background: url('../img/Group.png') no-repeat;
+    background-size: cover;
+    /* padding: 0 10rem; */
+    /* color: #000; */
+    height: 100%;
+}
+/* page7 */
+.box7 {
+    background-color: #fff;
+    height: 100%;
+    /* overflow-y: auto; */
+}
+
+.tab-container {
+    height: 100%;
+}
+.artboard-tab .art-fut {
+    font-size: 3.33rem;
+}
+.tab-cn {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 60%;
+    /* padding: 0 0 0 10rem; */
+    height: 100%;
+}
+.artboard-tab .art-title {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    margin-right: 2rem;
+}
+.tab-bg {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    background: url('../img/华为.png')  no-repeat;
+    background-size:  cover;
+}
+.artboard-tab .art-word {
+    width: 700px;
+}
+
+.artboard-tab .art-content {
+    display: inline-block;
+    width: 45rem;
+    margin: auto;
+}
+.tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 45rem; */
+}
+.tab-list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 244px;
+    height: 123px;
+    margin-bottom: 1.5rem;
+}
+.tab-list span {
+    display: inline-block;  
+    width: 180px;
+    height: 80px;
+    /* border: 1px dashed rgba(0,0,0,.5); */
+    
+    background: url('../img/huawei.png') no-repeat;
+    background-size: 100%;
+    background-color: #f4f4f7;
+    transition: width .5s, height .5s;
+    /* transition: all .3s; */
+   
+}
+.tab-list .active {
+    width: 244px;
+    height: 123px;
+    background: url('../img/华为选中.png');
+    background-size: 100%; 
+}
+
+.tab-list .item:nth-of-type(2) span {
+   
+    background: url('../img/建设银行.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(3) span {
+    background: url('../img/阿里体育.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(4) span {
+    background: url('../img/京东.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(5) span {
+    background: url('../img/橙天嘉禾.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(6) span {
+    background: url('../img/Momenta.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(7) span {
+    background: url('../img/Garmin.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(8) span {
+    background: url('../img/吉利.png') no-repeat;
+    background-color: #f4f4f7;
+}
+
+
+.tab-list .item:nth-of-type(2n-1) {
+    margin-right: 2rem;
+}
+
+/* foot */
+.box-foot {
+    background-color: #fff;
+    height: 100%;
+    /* overflow-y: auto; */
+}
+.artboard-foot {
+    position: absolute;
+    top: 20rem;
+    z-index: 100;
+}
+.foot-container {
+    height: 65%;
+    background: url('../img/callme.png') no-repeat;
+    background-size: cover;
+}
+.artboard-foot .art-fut {
+    font-size: 3.33rem;
+}
+.foot-cn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 0 0 0 10rem;
+    height: 100%;
+    
+}
+.foot-bg {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    background: url('../img/华为.png')  no-repeat;
+    background-size:  cover;
+}
+.foot-bar {
+    /* height: 36.67rem; */
+    box-sizing: border-box;
+    padding: 4rem 10rem 0 10rem;
+    background-color: #14151D;
+    position: relative;
+}
+.foot-bar .nav-list {
+    color: #fff;
+}
+.foot-message {
+    
+    padding-bottom: 4rem;
+    border-bottom: 0.17rem solid rgba(255,255,255,.3);
+    color: #fff;
+}
+
+.foot-message .nav-list,
+.foot-message .e-mail,
+.foot-message .address {
+    font-size: 1.33rem;
+    padding: 1rem 0;
+}
+.foot-message .nav-list li:nth-of-type(1) {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+.foot-info {
+    display: inline-block;
+}
+.foot-title {
+    /* display: inline-block; */
+    text-align: right;
+    float: right;
+}
+.foot-logo {
+    background: url('../img/Asteroid2x.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    
+}
+.foot-des {
+    padding: 2rem 0;
+    font-size: 2.33rem;
+    color: #fff;
+}
+
+.foot-gr {
+    color: #9b9b9b;
+    height: 6rem;
+    line-height: 3rem;
+    font-size: 1.33rem;
+}
+.foot-gr .wx {
+    float: left;
+}
+.foot-gr .wx p {
+    display: inline-block;
+    /* vertical-align: middle; */
+}
+.wx-logo {
+    display: inline-block;
+    background: url(../img/WXcopy.png) no-repeat;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+.foot-gr .license {
+    float: right;
+}

@@ -1,0 +1,427 @@
+[{
+        "id": 0,
+        "url": "img1",
+        "url2": "img1_gz",
+        "date": 20160806,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长在上村户外调研"
+    },
+    {
+        "id": 27,
+        "url": "img28",
+        "url2": "img28_gz",
+        "date": 20160912,
+        "isleader": false,
+        "info": "教师节慰问会上大家热烈讨论"
+    },
+    {
+        "id": 1,
+        "url": "img2",
+        "url2": "img2_gz",
+        "date": 20160806,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长主持在上村“两学一做”学习教育活动大会"
+    },
+    {
+        "id": 28,
+        "url": "img29",
+        "url2": "img29_gz",
+        "date": 20160912,
+        "isleader": false,
+        "info": "在上村“精准扶贫”交流活动"
+    },
+    {
+        "id": 2,
+        "url": "img3",
+        "url2": "img3_gz",
+        "date": 20161128,
+        "isleader": true,
+        "info": "建设银行深圳市分行杨辛资深副经理扶贫实地调研"
+    },
+    {
+        "id": 29,
+        "url": "img30",
+        "url2": "img30_gz",
+        "date": 20160912,
+        "isleader": false,
+        "info": "在上村“精准扶贫”交流活动中深圳建行捐赠物品"
+    },
+    {
+        "id": 3,
+        "url": "img4",
+        "url2": "img4_gz",
+        "date": 20161128,
+        "isleader": true,
+        "info": "建设银行深圳市分行杨辛资深副经理深入农田考察"
+    },
+    {
+        "id": 30,
+        "url": "img31",
+        "url2": "img31_gz",
+        "date": 20161125,
+        "isleader": false,
+        "info": "建设银行深圳市分行工会在上村扶贫慰问"
+    },
+    {
+        "id": 4,
+        "url": "img5",
+        "url2": "img5_gz",
+        "date": 20161128,
+        "isleader": true,
+        "info": "建设银行深圳市分行杨辛资深副经理雨中考察情况"
+    },
+    {
+        "id": 31,
+        "url": "img32",
+        "url2": "img32_gz",
+        "date": 20161125,
+        "isleader": false,
+        "info": "建设银行深圳市分行工会在上村送温暖"
+    },
+    {
+        "id": 5,
+        "url": "img6",
+        "url2": "img6_gz",
+        "date": 20170329,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长关切慰问群众"
+    },
+    {
+        "id": 32,
+        "url": "img33",
+        "url2": "img33_gz",
+        "date": 20170113,
+        "isleader": false,
+        "info": "迎新春精准扶贫茶话会"
+    },
+    {
+        "id": 6,
+        "url": "img7",
+        "url2": "img7_gz",
+        "date": 20170329,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长融入当地进行调研"
+    },
+    {
+        "id": 52,
+        "url": "img53",
+        "url2": "img53_gz",
+        "date": 20170113,
+        "isleader": false,
+        "info": "2017年在上村“迎新春”精准帮扶茶话会"
+    },
+    {
+        "id": 7,
+        "url": "img8",
+        "url2": "img8_gz",
+        "date": 20170329,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长实地进行调研"
+    },
+    {
+        "id": 8,
+        "url": "img9",
+        "url2": "img9_gz",
+        "date": 20170329,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长实地走访在上村村民"
+    },
+    {
+        "id": 33,
+        "url": "img34",
+        "url2": "img34_gz",
+        "date": 20170607,
+        "isleader": false,
+        "info": "总行扶贫督查与在上村居民欢乐合影"
+    },
+    {
+        "id": 9,
+        "url": "img10",
+        "url2": "img10_gz",
+        "date": 20170329,
+        "isleader": true,
+        "info": "建设银行深圳市分行王业行长调研中与村民亲切交谈"
+    },
+    {
+        "id": 34,
+        "url": "img35",
+        "url2": "img35_gz",
+        "date": 20170607,
+        "isleader": false,
+        "info": "总行扶贫督查中为村民送温暖"
+    },
+    {
+        "id": 10,
+        "url": "img11",
+        "url2": "img11_gz",
+        "date": 20170909,
+        "isleader": true,
+        "info": "建设银行深圳市分行行领导出席“大爱无疆，情暖在上”教师节慰问联谊活动"
+    },
+    {
+        "id": 35,
+        "url": "img36",
+        "url2": "img36_gz",
+        "date": 20170607,
+        "isleader": false,
+        "info": "总行雨中扶贫督查"
+    },
+    {
+        "id": 11,
+        "url": "img12",
+        "url2": "img12_gz",
+        "date": 20170909,
+        "isleader": true,
+        "info": "建设银行深圳市分行张学庆副行长调研慰问"
+    },
+    {
+        "id": 36,
+        "url": "img37",
+        "url2": "img37_gz",
+        "date": 20170709,
+        "isleader": false,
+        "info": "深圳建行青年志愿者协会\r\n“文化在上”主题活动"
+    },
+    {
+        "id": 12,
+        "url": "img13",
+        "url2": "img13_gz",
+        "date": 20170909,
+        "isleader": true,
+        "info": "建设银行深圳市分行赵芝然副行长和柏桦资深副经理在上村送温暖"
+    },
+    {
+        "id": 37,
+        "url": "img38",
+        "url2": "img38_gz",
+        "date": 20170709,
+        "isleader": false,
+        "info": "深圳建行青年志愿者支教在上小学"
+    },
+    {
+        "id": 13,
+        "url": "img14",
+        "url2": "img14_gz",
+        "date": 20170909,
+        "isleader": true,
+        "info": "建设银行深圳市分行赵芝然副行长在在上村与小朋友欢乐合影"
+    },
+    {
+        "id": 38,
+        "url": "img39",
+        "url2": "img39_gz",
+        "date": 20170709,
+        "isleader": false,
+        "info": "深圳建行文化扶贫项目建行\r\n“文化在上”主题活动"
+    },
+    {
+        "id": 14,
+        "url": "img15",
+        "url2": "img15_gz",
+        "date": 20170909,
+        "isleader": true,
+        "info": "在上村小朋友为建设银行深圳市分行行领导佩戴红领巾"
+    },
+    {
+        "id": 39,
+        "url": "img40",
+        "url2": "img40_gz",
+        "date": 20170709,
+        "isleader": false,
+        "info": "深圳建行文化扶贫项目捐建建行书屋"
+    },
+    {
+        "id": 15,
+        "url": "img16",
+        "url2": "img16_gz",
+        "date": 20170910,
+        "isleader": true,
+        "info": "建设银行深圳市分行“大爱无疆，情暖在上”教师节慰问联谊活动"
+    },
+    {
+        "id": 40,
+        "url": "img41",
+        "url2": "img41_gz",
+        "date": 20170709,
+        "isleader": false,
+        "info": "深圳建行文化扶贫项目中小朋友为青年志愿者佩戴红领巾"
+    },
+
+    {
+        "id": 16,
+        "url": "img17",
+        "url2": "img17_gz",
+        "date": 20170910,
+        "isleader": true,
+        "info": "建设银行深圳市分行在上村捐建建行书屋"
+    },
+    {
+        "id": 41,
+        "url": "img42",
+        "url2": "img42_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行“善心慧思”爱心助学活动中捐赠文具"
+    },
+    {
+        "id": 17,
+        "url": "img18",
+        "url2": "img18_gz",
+        "date": 20171201,
+        "isleader": true,
+        "info": "建设银行深圳市分行谭晓兵总审计师调研慰问送关怀"
+    },
+    {
+        "id": 42,
+        "url": "img43",
+        "url2": "img43_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行青年志愿者带领学生上体育课"
+    },
+    {
+        "id": 18,
+        "url": "img19",
+        "url2": "img19_gz",
+        "date": 20171201,
+        "isleader": true,
+        "info": "建设银行深圳市分行谭晓兵总审计师调研慰问送温暖"
+    },
+    {
+        "id": 43,
+        "url": "img44",
+        "url2": "img44_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行青年志愿者讲课中"
+    },
+    {
+        "id": 19,
+        "url": "img20",
+        "url2": "img20_gz",
+        "date": 20171202,
+        "isleader": true,
+        "info": "建设银行深圳市分行韩凤林纪委书记出席路灯捐赠仪式"
+    },
+    {
+        "id": 44,
+        "url": "img45",
+        "url2": "img45_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "   深圳建行青年志愿者协会\r\n“善心慧思”爱心助学活动"
+    },
+    {
+        "id": 20,
+        "url": "img21",
+        "url2": "img21_gz",
+        "date": 20171202,
+        "isleader": true,
+        "info": "建设银行深圳市分行韩凤林纪委书记户外调研"
+    },
+    {
+        "id": 45,
+        "url": "img46",
+        "url2": "img46_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "   深圳建行青年志愿者协会\r\n“善心慧思”爱心助学活动\r\n   会议"
+    },
+    {
+        "id": 21,
+        "url": "img22",
+        "url2": "img22_gz",
+        "date": 20171202,
+        "isleader": true,
+        "info": "建设银行深圳市分行韩凤林纪委书记调研慰问送温暖"
+    },
+    {
+        "id": 46,
+        "url": "img47",
+        "url2": "img47_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行青年志愿者与小朋友欢乐合影"
+    },
+
+    {
+        "id": 22,
+        "url": "img23",
+        "url2": "img23_gz",
+        "date": 20171202,
+        "isleader": true,
+        "info": "建设银行深圳市分行韩凤林纪委书记与爱心客户共同为在上种下希望树"
+    },
+    {
+        "id": 47,
+        "url": "img48",
+        "url2": "img48_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行青年志愿者与小朋友亲切合影"
+    },
+    {
+        "id": 23,
+        "url": "img24",
+        "url2": "img24_gz",
+        "date": 20171202,
+        "isleader": true,
+        "info": "建设银行深圳市分行韩凤林纪委书记与村民亲切交谈"
+    },
+    {
+        "id": 48,
+        "url": "img49",
+        "url2": "img49_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行青年志愿者与在上村学生在篮球场合影"
+    },
+    {
+        "id": 24,
+        "url": "img25",
+        "url2": "img25_gz",
+        "date": 20171220,
+        "isleader": true,
+        "info": "建设银行深圳市分行李忠东副行长携私人银行部在上村进行慰问"
+    },
+    {
+        "id": 49,
+        "url": "img50",
+        "url2": "img50_gz",
+        "date": 20171201,
+        "isleader": false,
+        "info": "深圳建行青年志愿者支教"
+    },
+    {
+        "id": 25,
+        "url": "img26",
+        "url2": "img26_gz",
+        "date": 20170910,
+        "isleader": true,
+        "info": "建设银行深圳市分行营业部在上村文化广场篮球场捐建仪式"
+    },
+    {
+        "id": 51,
+        "url": "img52",
+        "url2": "img52_gz",
+        "date": 20171202,
+        "isleader": false,
+        "info": "深圳建行引入爱心企业为在上村捐赠LED路灯"
+    },
+    {
+        "id": 26,
+        "url": "img27",
+        "url2": "img27_gz",
+        "date": 20170910,
+        "isleader": true,
+        "info": "建设银行深圳市分行张学庆副行长和赵芝然副行长参加在上村名片落成仪式"
+    },
+    {
+        "id": 50,
+        "url": "img51",
+        "url2": "img51_gz",
+        "date": 20171202,
+        "isleader": false,
+        "info": "康佳集团“帮扶下一代，科技育人才”教学彩电捐赠活动"
+    }
+]

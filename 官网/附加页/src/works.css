@@ -1,0 +1,394 @@
+/* @font-face {
+    font-family:' PingFangSC';
+    src: url('../fonts/PingFang-SC/PingFang-SC-Medium.woff');
+} */
+
+@font-face {
+    font-family: 'PingFang-SC-Medium';
+    src: url("../fonts/PingFang-SC/PingFang-SC-Medium.woff") format("woff");
+    }
+    
+body {
+    background-color: #f9f9fb;
+    font-family: 'PingFang-SC-Medium';
+}
+.header-content {
+    margin-bottom: .1388rem;
+}
+.header-content-title {
+    line-height: 1.5277rem;
+    margin-top: 1.3888rem;
+}
+.header-content::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/works/Workpagebg.png') no-repeat;
+    background-size: cover;
+    height: 4.1666rem;
+    width: 100%;
+    z-index: 100;
+
+    /* 替换背景图，用绝对定位写了一套背景定位元素 */
+    display: none;
+}
+
+
+/* header部分背景图定位 */
+.header-webbg .icon-1 {
+    background: url('../img/works/Rectangle\ Copy\ 5@2x.png');
+    background-size: .0902rem .0902rem;
+    width: .0902rem;
+    height: .0902rem;
+    position: absolute;
+    left: .09024rem;
+    top: 2.3125rem;
+}
+.header-webbg .icon-2 {
+    background: url('../img/works/Rectangle\ Copy\ 3@2x.png');
+    background-size: .1319rem .1319rem;
+    width: .1319rem;
+    height: .1319rem;
+    position: absolute;
+    left: 1.7777rem;
+    top: 1.4652rem;
+}
+.header-webbg .icon-3 {
+    background: url('../img/works/Rectangle\ Copy\ 4@2x.png');
+    background-size: .0902rem .0902rem;
+    width: .0902rem;
+    height: .0902rem;
+    position: absolute;
+    left: 2.2013rem;
+    top: 1.6666rem;
+}
+.header-webbg .icon-4 {
+    background: url('../img/works/Oval\ Copy\ 10@2x.png');
+    background-size: .0236rem .0236rem;
+    width: .0236rem;
+    height: .0236rem;
+    position: absolute;
+    left: 3.4027rem;
+    top: 1.375rem;
+}
+.header-webbg .icon-5 {
+    background: url('../img/works/Group\ 5@2x.png');
+    background-size: .9583rem .9583rem;
+    width: .9583rem;
+    height: .9583rem;
+    position: absolute;
+    left: 6.2013rem;
+    top: 1.368rem;
+}
+.header-webbg .icon-6 {
+    background: url('../img/works/Group\ 5\ Copy@2x.png');
+    background-size: .4375rem .4375rem;
+    width: .4375rem;
+    height: .4375rem;
+    position: absolute;
+    left: 6.5694rem;
+    top: 1.5277rem;
+}
+.header-webbg .icon-7 {
+    background: url('../img/works/Rectangle\ Copy\ 2@2x.png');
+    background-size: 0.0833rem .0763rem;
+    width: .0833rem;
+    height: .0763rem;
+    position: absolute;
+    left: 7.857rem;
+    top: 2.118rem;
+}
+.header-webbg .icon-8 {
+    background: url('../img/works/Rectangle\ Copy@2x.png');
+    background-size: .1319rem .1319rem;
+    width: .1319rem;
+    height: .1319rem;
+    position: absolute;
+    left: 8.5416rem;
+    top: 1.7986rem;
+}
+.header-webbg .icon-9 {
+    background: url('../img/works/Oval\ Copy\ 8@2x.png');
+    background-size: .5069rem .5069rem;
+    width: .5069rem;
+    height: .5069rem;
+    position: absolute;
+    left: 1.6597rem;
+    top: 2rem;
+}
+.header-webbg .icon-10 {
+    background: url('../img/works/Oval\ Copy\ 9@2x.png');
+    background-size: .2777rem .2777rem;
+    width: .2777rem;
+    height: .2777rem;
+    position: absolute;
+    left: 1.9652rem;
+    top: 1.9305rem;
+}
+
+.header-content-title {
+    text-align: center;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 8.0555rem;
+    margin: auto;
+    justify-content: space-between;
+}
+.works-item {
+    width: 3.8888rem;
+    height: 2.8333rem;
+    background-color: #ccc;
+    box-shadow: .0555rem .0555rem .2083rem 0rem rgba(215,215,225,0.4);
+    border-radius: .1111rem;
+    margin-top: .2777rem;
+    background:rgba(255,255,255,1); 
+}
+/* img与h3之间存在8像素距离 */
+.works-item-img {
+    max-width: 3.8888rem; 
+}
+.works-item-titile {
+    margin-top: .1111rem;
+    margin-left: .125rem;
+    margin-bottom: .1527rem;
+    font-size: .1388rem;
+    line-height: 1.5;
+    /* font-family: 'Interstate-Regular' */
+}
+
+.works-item-tail {
+    display: flex;
+    justify-content: space-between;
+    align-items: content;
+    border-top: .0069rem solid rgba(219,220,230,0.4);
+    margin-left: .0902rem;
+    margin-right: .0902rem;
+    padding-top: .0902rem;
+}
+.works-item-tail img {
+    width: 50%;
+}
+.works-item-tail  .img-ct2 {
+    margin-top: -.0069rem;
+}
+.works-item-tail  .img-ct3 {
+    margin-top: -.0208rem;
+}
+.works-item-tail  .img-ct4 {
+    margin-top: -.0763rem;
+}
+.works-item-tail  .img-ct6 {
+    margin-top: -.0138rem;
+}
+/* .works-item-tail .img-scale {
+    width: 50%;
+} */
+.works-item-taillist {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PingFangSC-Medium';
+    color: rgba(95,75,139,1);
+}
+.works-item-taillist .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    line-height: 1.4;
+    width:82rem;
+    height:24rem;
+    background:rgba(95,75,139,0.2);
+    border-radius:14rem;
+    margin-left: 13rem;
+
+}
+.works-item-taillist .diff {
+    color:rgba(139,139,160,1);
+}
+
+
+@media screen and (max-width: 750px) {
+    body {
+        width: inherit;
+    }
+    h3 {
+        margin: 0;
+    }
+    .web {
+        display: none;
+    }
+    .wap {
+        position: static;
+    }
+    .wap-server-item {
+        display: none;
+    }
+
+    .header-content-title {
+        /* 重置关联server.css样式 */
+        line-height: inherit;
+        max-width: inherit;
+        margin: inherit;
+        height: inherit;
+
+        /* 定义works页面移动端样式 */
+        margin-top: 6.4rem;
+    }
+    .header-wapbg .icon-1 {
+        background: url('../img/../img/works/Rectangle\ Copy\ 5@3x.png');
+        background-size: .2666rem .2666rem;
+        width: .2666rem;
+        height: .2666rem;
+        position: absolute;
+        left: .5333rem;
+        top: 7.9733rem;
+    }
+    .header-wapbg .icon-2 {
+        background: url('../img/works/Rectangle\ Copy\ 3@3x.png');
+        background-size: .3866rem .3866rem;
+        width: .3866rem;
+        height: .3866rem;
+        position: absolute;
+        left: 2.2133rem;
+        top: 4.3466rem;
+    }
+    .header-wapbg .icon-3 {
+        background: url('../img/works/Rectangle\ Copy\ 4@3x.png');
+        background-size: .2666rem .2666rem;
+        width: .2666rem;
+        height: .2666rem;
+        position: absolute;
+        left: 3.44rem;
+        top: 4.9333rem;
+    }
+    .header-wapbg .icon-4 {
+        background: url('../img/works/Oval\ Copy\ 10@3x.png');
+        background-size: .68rem .68rem;
+        width: .68rem;
+        height: .68rem;
+        position: absolute;
+        left: 6.8933rem;
+        top: 4.0933rem;
+    }
+    .header-wapbg .icon-5 {
+        background: url('../img/works/Group\ 5@3x.png');
+        background-size: 2.76rem 2.76rem;
+        width: 2.76rem;
+        height: 2.76rem;
+        position: absolute;
+        left: 6.24rem;
+        top: 9.7066rem;
+    }
+    .header-wapbg .icon-6 {
+        background: url('../img/works/Group\ 5\ Copy@3x.png');
+        background-size: 1.2533rem 1.2533rem;
+        width: 1.2533rem;
+        height: 1.2533rem;
+        position: absolute;
+        left: 7.2933rem;
+        top: 10.16rem;
+    }
+    .header-wapbg .icon-7 {
+        background: url('../img/works/Rectangle\ Copy\ 2@3x.png');
+        background-size: .24rem .2266rem;
+        width: .24rem;
+        height: .2266rem;
+        position: absolute;
+        left: 6.9466rem;
+        top: 8.7866rem;
+    }
+    .header-wapbg .icon-8 {
+        background: url('../img/works/Rectangle\ Copy@3x.png');
+        background-size: .3866rem .3866rem;
+        width: .3866rem;
+        height: .3866rem;
+        position: absolute;
+        left: 8.8666rem;
+        top: 7.8666rem;
+    }
+    .header-wapbg .icon-9 {
+        background: url('../img/works/Oval\ Copy\ 8@3x.png');
+        background-size: 1.4666rem 1.4666rem;
+        width: 1.4666rem;
+        height: 1.4666rem;
+        position: absolute;
+        left: 1.8933rem;
+        top: 8.1333rem;
+    }
+    .header-wapbg .icon-10 {
+        background: url('../img/works/Oval\ Copy\ 9@3x.png');
+        background-size: .8rem .8rem;
+        width: .8rem;
+        height: .8rem;
+        position: absolute;
+        left: 2.7733rem;
+        top: 7.9333rem;
+    }
+
+    .works {
+        margin-top: .8rem;
+    }
+    .works-item {
+        width: 8.9333rem;
+        height: 7.3333rem;
+    }
+    .works-item-img {
+        max-width: inherit;
+        width: 8.9333rem;
+    }
+    .works-item-titile {
+        margin-top: .44rem;
+        margin-left: .2666rem;
+        margin-bottom: .56rem;
+        font-size: .4266rem;
+        line-height: 1.125;
+    }
+    .works-item-tail {
+        padding-top: .24rem;
+        align-items: center;
+    }
+    .works-item-tail .img-ct1 img {
+        width: 3.1733rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct2 img {
+        width: 2.2933rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct3 img {
+        width: 1.44rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct4 img {
+        width: 1.5466rem;
+        height: .8266rem;
+    }
+    .works-item-tail .img-ct5 img {
+        width: 2.6266rem;
+        height: .5866rem;
+    }
+    .works-item-tail .img-ct6 img {
+        width: 1.8133rem;
+        height: .5866rem;
+    }
+    .works-item-taillist .show-web {
+        display: none;
+    }
+    .works-item-taillist .diff {
+        color: inherit;
+    }
+    .works-item-taillist .sign {
+        font-size: .3333rem;
+        line-height: .4533rem;
+        width: 2.7066rem;
+        height: .7866rem;
+        background: rgba(223,219,232,1);
+        border-radius: .4666rem;
+        margin-right: .2666rem;
+        font-weight: 500;
+    }
+    
+}

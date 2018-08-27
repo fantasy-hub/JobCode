@@ -1,0 +1,384 @@
+/* YOHO关于页样式表 */
+/* 引入字体 */
+@font-face {
+    font-family: 'PingFang-SC-Medium';
+    src: url("../fonts/PingFang-SC/PingFang-SC-Medium.woff") format("woff");
+    }
+body {
+    font-family: 'PingFang-SC-Medium';
+}
+
+/* head-content 内部定位元素*/
+.header-content::after {
+    display: none;
+}
+.star-position {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+}
+.star-position span {
+    transition: animation 1s ease-out, transform 1s ease-out;
+}
+.star-position .icon-1 {
+    position: absolute;
+    top: 333px;
+    right: 514px;
+    width: 13px;
+    height: 13px;
+    background: url('../img/about/Rectangle\ Copy\ 5@3x.png') no-repeat;
+    background-size: 13px 13px;
+    animation: slide-80 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(200px);
+}
+.star-position .icon-2 {
+    position: absolute;
+    top: 215px;
+    right: 328px;
+    width: 115px;
+    height: 108px;
+    background: url('../img/about/Page\ 1.png') no-repeat;
+    background-size: 115px 108px;
+    animation: slide-40 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(100px);
+}
+.star-position .icon-3 {
+    position: absolute;
+    top: 253px;
+    right: 232px;
+    width: 19px;
+    height: 19px;
+    background: url('../img/about/Rectangle\ Copy\ 3@3x.png') no-repeat;
+    background-size: 19px 19px;
+    animation: slide-60 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(150px);
+}
+.star-position .icon-4 {
+    position: absolute;
+    top: 261px;
+    right: 197px;
+    width: 13px;
+    height: 13px;
+    background: url('../img/about/Rectangle\ Copy\ 4@3x.png') no-repeat;
+    background-size: 13px 13px;
+    animation: slide-20 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(50px);
+}
+.star-position .icon-5 {
+    position: absolute;
+    top: 320px;
+    right: 160px;
+    width: 39px;
+    height: 40px;
+    background: url('../img/about/Page\ 11.png') no-repeat;
+    background-size: 39px 40px; 
+    animation: slide-40 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(100px);
+}
+
+
+/* 发展历程 */
+.dev {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow:6px 19px 30px 0px rgba(102,98,136,0.1);
+    transform: translateY(-180px);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.dev-title {
+    /* flex :0 0 100%; */
+    padding-top: 80px;
+    padding-bottom: 60px; 
+    font-size: 32px;
+    text-align: center;
+}
+.dev-timeline {
+    padding: 20px 0;
+    text-align: center;
+}
+.dev-timeline-img {
+    padding-left: 28px;
+}
+.dev-timeline-content {
+    /* font-size: 24px; */
+    flex: 1;
+    max-width: 180px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-left: 5px; */
+}
+.dev-timeline-content .title {
+    font-size: 24px;
+    padding-bottom: 12px; 
+}
+.dev-timeline-content .desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #888;
+}
+.dev-timeline-desc {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 825px;
+    padding: 90px 16px 30px 8px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.timeline-line {
+    width: 6px;
+    height: 140px;
+    margin-top: -155px;
+    margin-bottom: 20px;
+}
+/* .timeline-line1 {
+    margin-left: 5px;
+}  */
+
+
+/* 团队介绍 */
+.team {
+    /* background-color: #fff; */
+    padding-bottom: 40px;
+    /* height: 700px; */
+    /* z-index: -100; */
+}
+.team-header {
+    position: relative;
+}
+
+.team-header-imgl {
+    position: absolute;
+    left: 62px;
+    top: 12px;
+    z-index: -1;
+}
+.team-header-imgl .one {
+    background: url('../img/about/20180625-角色-05.png') no-repeat;
+    display: inline-block;
+    height: 283px;
+    width: 135px;
+}
+.team-header-imgl .two {
+    background: url('../img/about/20180625-角色-04.png') no-repeat;
+    transform: translate(-30px, 10px);
+    display: inline-block;
+    height: 220px;
+    width: 243px;
+}
+.team-header-imgr {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    z-index: -1;
+}
+.team-header-imgr .one {
+    background: url('../img/about/20180625-角色-03.png') no-repeat;
+    display: inline-block;
+    transform: translate(80px, 40px);
+    height: 264px;
+    width: 232px;
+}
+.team-header-imgr .two {
+    background: url('../img/about/20180625-角色-02.png') no-repeat;
+    transform: translate(0, -50px);
+    display: inline-block;
+    height: 216px;
+    width: 201px;
+}
+
+.team-header-title {
+    padding-top: 80px;
+    padding-bottom: 30px; 
+    font-size: 32px;
+    text-align: center;
+    z-index: 100;
+}
+.team-header-desc {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    line-height: 24px;
+    z-index: 100;
+}
+
+.team-introduce {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 140px 0 0 0;
+    justify-content: space-between;
+}
+.team-introduce-item {
+    /* flex: 1; */
+    max-width: 280px;
+    text-align: center;
+}
+.team-head-img {
+    width: 280px;
+    height: 280px;
+}
+.team-introduce-item .name {
+    padding-top: 28px;
+    font-size: 18px;
+}
+.team-introduce-item .duties {
+    font-size: 14px;
+    padding-top: 8px;
+}
+.team-introduce-item .record {
+    font-size: 14px;
+    color: #888;
+    line-height: 24px;
+    text-align: left;
+    padding: 16px 0 100px 0;
+}
+
+/* motto */
+.motto {
+    background-color: #F9F9FB;
+    /* height: 700px; */
+    padding-bottom: 60px;
+}
+.motto-title {
+    padding-top: 80px;
+    font-size: 32px;
+    text-align: center;
+}
+.motto-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    /* border: 1px solid #333; */
+    display: flex;
+    justify-content: space-between;
+}
+.motto-content-item .said{
+    /* flex: 0 0 30%; */
+    font-size: 18px;
+    max-width: 314px;
+    line-height: 25px;
+    padding-bottom: 12px;
+}
+.motto-content-item .by{
+    /* flex: 0 0 30%; */
+    font-size: 14px;
+    color: #888;
+}
+.motto-content-item .time {
+    width: 336px;
+    height: 224px;
+    border-radius: 12px;
+    padding-bottom: 49px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.motto-content-item .notes {
+    width: 280px;
+    height: 187px;
+    border-radius: 12px;
+    padding-top: 23px;
+}
+.motto-content-item .discuss {
+    width: 420px;
+    height: 280px;
+    border-radius: 12px;
+    padding: 172px 0 51px 0;
+}
+.motto-content-item .think {
+    width: 336px;
+    height: 224px;
+    border-radius: 12px;
+    padding-bottom: 40px;
+}
+.motto-content-item .book {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    transform: translate(-100px, 31px);
+}
+
+
+.wap {
+    display: none;
+}
+@media screen and (max-width: 750px) {
+    body {
+        width: inherit;
+    }
+    .web {
+        display: none;
+    }
+    .wap {
+        display: block;
+    }
+
+    /* head-content 内部定位元素*/
+    .star-position .icon-1 {
+        top: 389px;
+        left: 158px;
+    }
+    .star-position .icon-2 {
+        top: 554px;
+        right: 180px;
+    }
+    .star-position .icon-3 {
+        top: 293px;
+        right: 181px;
+    }
+    .star-position .icon-4 {
+        top: 336px;
+        right: 97px;
+    }
+    .star-position .icon-5 {
+        top: 716px;
+        right: 40px;
+    }
+
+    .timeline-bg {
+        width: 316px;
+        height: 316px;
+    }
+    .timeline-line {
+        width: 6px;
+        height: 120px;
+        margin-top: -72px;
+    }
+
+    .dev-timeline-content {
+        max-width: 361px;
+        padding-bottom: 92px;
+    }
+    .dev-timeline-content:last-child {
+        padding-bottom: 0;
+    }
+    .dev-timeline {
+        padding: 0 0 80px 0;
+    }
+    .dev-timeline-desc {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: inherit;
+    }
+    .dev-timeline-content .desc {
+        font-size: 28px;
+        line-height: 44px;
+    }
+
+    .team {
+        transform: translateY(-159px);
+    }
+    .team-header-imgl .one {
+        width: 69px;
+        height: 145px;
+        background-size: 69px 145px;
+    }
+}

@@ -1,0 +1,981 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+/* 设置默认字体 */
+html,
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px "PingFang-SC-Regular", "PingFangSC", "微软雅黑", "宋体", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; 
+    /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+a { text-decoration: none; color: inherit; }
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@font-face {
+    font-family: 'PingFang-SC-Regular';
+    src: url("../fonts/PingFang\ Regular/PingFang\ Regular.woff") format("woff");
+}
+@font-face {
+    font-family: 'PingFang-SC-Semibold';
+src: url("../fonts/PingFang-SC/PingFang-SC-Semibold.woff") format("woff");
+}
+@font-face {
+    font-family: 'PingFang-SC-Medium';
+    src: url("../fonts/PingFang-SC/PingFang-SC-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: 'DIN-Alternate-Bold';
+    src: url("../fonts/DIN/DIN\ Alternate\ Bold.ttf") format("ttf");
+}
+
+
+
+
+
+.main {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+/* site navigation */
+
+.vertical-line {
+    position: fixed;
+    bottom: 0;
+    right: .86rem;
+    background-color: #fff;
+    opacity: .3;
+    display: block;
+    width:0.013rem;
+    height: 1.67rem;
+    z-index: 100;
+}
+/* .site-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10rem;
+    width: 1.33rem;
+    z-index: 100;
+}
+.site-nav li {
+    width:0.83rem;
+    height:0.17rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    float: right;
+    list-style: none;
+}
+
+
+.site-nav .site-active {
+    width:1.33rem;
+    height:0.25rem;
+    background-color: #fff;
+} */
+
+/* 内容部分 */
+/* 背景图 */
+.fit-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+/* page1 */
+.box1 {
+    padding: 0 .833rem;
+    color: #fff;
+    height: 100%;
+}
+.content {
+    color: #fff;
+    position: absolute;
+    bottom: .833rem;
+}
+.con-title {
+    font-size: 44px;
+}
+.con-list {
+    font-size: 12px;
+    margin-top: 36px;
+}
+.con-list li{
+    float: left;
+    font-size: 16px;
+    padding-left: 0.125rem;
+    margin-left: 0.326rem;
+    white-space: nowrap;
+}
+.con-list li:nth-of-type(1) {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+/* twe page */
+.box2 {
+    background: #fff;
+    /* padding: 0;
+    color: #000; */
+    height: 100%;
+}
+
+
+
+.artboard3-copy,
+.artboard2-copy,
+.artboard-copy {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.art-word {
+    padding: 0 .833rem;
+}
+.art-title {
+    font-size: 16px;
+    font-family: 'PingFang-SC-Medium';
+}
+.art-title .num {
+    padding-right: 30px;
+}
+.art-fut {
+    font-size: 48px;
+    font-family: 'DIN-Alternate-Bold';
+}
+.art-content {
+    margin-top: 70px;
+    padding-left: 50px;
+  
+}
+.art-desc {
+    padding-top: 20px;
+    font-size: 14px;
+}
+.none-bg {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #f0f2f5;
+}
+.show-bg {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: url('../img/ATT@2x.png')  no-repeat;
+    background-size:  cover;
+}
+
+/* page3 */
+.box3 {
+    color: #fff;
+    height: 100%;
+}
+.box3 .none-bg {
+    background: none;
+}
+.artboard2-copy .art-content {
+    /* max-width: 33rem; */
+}
+.artboard2-copy .art-fut {
+    font-size: 40px;
+    font-family: 'PingFang-SC-Medium';
+}
+.mac {
+    position: absolute;
+
+    top: 25%;
+    right: 1.25rem;
+   
+}
+.imac {
+    width: 4.11rem;
+}
+.mac .iphone {
+    position: absolute;
+    width: .75rem;
+    bottom: 42px;
+    right: -42px;
+}
+
+/* page4 */
+
+/* page5 */
+.box5 {
+    background-color: #fff;
+    height: 100%;
+}
+.box5 .show-bg {
+    background: url('../img/Screen.png')  no-repeat;
+    background-size:  cover;
+}
+.artboard3-copy .art-fut {
+    font-size: 40px;
+}
+.box5  .none-bg .art-fut{
+    font-family: "PingFang-SC-Medium";
+    font-size: 40px;
+} 
+/* page6 */
+.box6 {
+    height: 100%;
+}
+/* page7 */
+.artboard-tab {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.box7 {
+    background-color: #fff;
+    height: 100%;
+    /* overflow-y: auto; */
+}
+
+.tab-container {
+    height: 100%;
+}
+.artboard-tab .art-fut {
+    font-size: 40px;
+}
+.tab-cn {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 60%;
+    /* padding: 0 0 0 10rem; */
+    height: 100%;
+}
+.artboard-tab .art-title {
+    font-family: 'PingFang-SC-Medium';
+    display: inline-block;
+    /* vertical-align: top; */
+    height: 100%;
+    margin-right: 24px;
+}
+.tab-bg {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    background: url('../img/华为.png')  no-repeat;
+    background-size:  cover;
+}
+.artboard-tab .art-word {
+    width: 700px;
+}
+
+.artboard-tab .art-content {
+    display: inline-block;
+    width: 540px;
+    margin: auto;
+}
+.tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 45rem; */
+}
+.tab-list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 244px;
+    height: 123px;
+    margin-bottom: 18px;
+}
+.tab-list span {
+    display: inline-block;  
+    width: 180px;
+    height: 80px;
+    /* border: 1px dashed rgba(0,0,0,.5); */
+    
+    background: url('../img/huawei.png') no-repeat;
+    background-size: 100%;
+    background-color: #f4f4f7;
+    transition: width .5s, height .5s;
+    /* transition: all .3s; */
+   
+}
+.tab-list .active {
+    width: 244px;
+    height: 123px;
+    background: url('../img/华为选中.png');
+    background-size: 100%; 
+}
+
+.tab-list .item:nth-of-type(2) span {
+   
+    background: url('../img/建设银行.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(3) span {
+    background: url('../img/阿里体育.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(4) span {
+    background: url('../img/京东.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(5) span {
+    background: url('../img/橙天嘉禾.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(6) span {
+    background: url('../img/Momenta.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(7) span {
+    background: url('../img/Garmin.png') no-repeat;
+    background-color: #f4f4f7;
+}
+.tab-list .item:nth-of-type(8) span {
+    background: url('../img/吉利.png') no-repeat;
+    background-color: #f4f4f7;
+}
+
+
+.tab-list .item:nth-of-type(2n-1) {
+    margin-right: 24px;
+}
+
+/* foot */
+.box-foot {
+    background:linear-gradient(-145.7deg,#a786e9,#7267c1);
+    height: 100%;
+  
+}
+
+.box-bg-man .item1 {
+    background: url('../img/post-foot/20180625-首页联系我们-03.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 3.8rem;
+    height: 2.98rem;
+    left: 0;
+    top: 0;
+}
+.box-bg-man .item2 {
+    background: url('../img/post-foot/20180625-首页联系我们-04.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 5.18rem;
+    height: 2.17rem;
+    left: 0;
+    top: 0;
+}
+.box-bg-man .item3 {
+    background: url('../img/post-foot/Oval.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: .638rem;
+    height: .638rem;
+    left: 3.347rem;
+    top: .2777rem;
+}
+.box-bg-man .item4 {
+    background: url('../img/post-foot/Oval\ Copy\ 2.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: .222rem;
+    height: .222rem;
+    left: .222rem;
+    top: 2.708rem;
+}
+.box-bg-man .item5 {
+    background: url('../img/post-foot/Oval\ Copy.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: .403rem;
+    height: .403rem;
+    left: 1.903rem;
+    top: 3.166rem;
+}
+
+.box-bg-woman .item1 {
+    background: url('../img/post-foot/Oval\ Copy\ 5.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: .673rem;
+    height: .673rem;
+    right: .29rem;
+    bottom: 1.437rem;
+}
+.box-bg-woman .item2 {
+    background: url('../img/post-foot/20180625-首页联系我们-02.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 2.19rem;
+    height: 2.16rem;
+    right: .47rem;
+    bottom: .25rem;
+}
+.box-bg-woman .item3 {
+    background: url('../img/post-foot/Oval\ Copy\ 3.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: .208rem;
+    height: .208rem;
+    right: 1.972rem;
+    bottom: .833rem;
+}
+.box-bg-woman .item4 {
+    background: url('../img/post-foot/Oval\ Copy\ 4.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: .347rem;
+    height: .347rem;
+    right: .79rem;
+    bottom: .34rem;
+}
+
+.foot-desc {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.foot-container-des {
+ 
+    font-family: 'PingFang-SC-Medium';
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    width: 484px;
+}
+.foot-container-call {
+   
+    margin-top: 40px;
+    font-family: 'PingFang-SC-Medium';
+    width:140px;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    background:rgba(255,255,255,1);
+    border-radius:24px;
+    color: #9067E3;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.foot-bar {
+    height: 440px;
+    box-sizing: border-box;
+    padding: 109px 120px 0 120px;
+    background-color: #14151D;
+    position: relative;
+   
+}
+.foot-bar .nav-list {
+    font-family: 'PingFang-SC-Medium';
+    color: #6C6776;
+    font-size: 14px;
+}
+.foot-message {
+    height: 200px;
+   
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    color: #fff;
+}
+
+.foot-message .nav-list,
+.foot-message .e-mail,
+.foot-message .address {
+    font-family: 'PingFang-SC-Medium';
+    color: #6C6776;
+    font-size: 14px;
+    padding: 12px 0;
+}
+.foot-message .nav-list li:nth-of-type(1) {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+.foot-info {
+    float: right;
+    /* display: inline-block; */
+}
+.foot-title {
+    /* display: inline-block; */
+    text-align: left;
+    float: left;
+}
+.foot-logo {
+    background: url('../img/xiaox@2x.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 137px;
+    height: 30px;
+    
+}
+.foot-des {
+    font-family: 'PingFang-SC-Medium';
+    padding: 24px 0;
+    font-size: 14px;
+    line-height:22px;
+    max-width: 467px;
+    color: #6C6776;
+}
+
+.foot-gr {
+    color: #9b9b9b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 118px;
+    line-height: 36px;
+    font-size: 16px;
+}
+.foot-icon {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    width: 104px;
+}
+
+.wx-logo {
+    display: inline-block;
+    background: url('../img/icon/微信@2x.png') no-repeat;
+    background-size: contain;
+    height: 38px;
+    width: 38px;
+}
+.weibo-logo {
+    background: url('../img/icon/微博@2x.png') no-repeat;
+    background-size: contain;
+    height: 38px;
+    width: 38px;
+}
+.foot-gr .license {
+    color: #6C6776;
+    font-size: 14px;
+    font-family: 'PingFang-SC-Medium';
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .vertical-line {
+        display: none;
+    }
+
+    /* page1 */
+    .box1 {
+        padding: 0 .533rem;
+    }
+    .con-title {
+        font-size: .64rem;
+    }
+    .con-list {
+        font-size: .32rem;
+        margin-top: .48rem;
+    }
+    .con-list li{
+        float: left;
+        font-size: .32rem;
+        padding-left: .28rem;
+        margin-left: .76rem;
+    }
+    .content {
+        bottom: 3.45rem;
+    }
+    /* page2 */
+
+    .none-bg {
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        /* width: 50%; */
+        /* height: 100%; */
+    }
+    .artboard3-copy,
+    .artboard2-copy,
+    .artboard-copy {
+        /* top: 4.213rem; */
+        top: 20%;
+        transform: none;
+    }
+    .show-bg {
+        /* display: inline-block; */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6.666rem;
+        width: 100%;
+      
+    }
+
+    .art-word {
+        padding: 0 .533rem;
+    }
+    .art-title {
+        font-size: .266rem;
+    }
+    .art-title .num {
+        padding-right: .4rem;
+    }
+    .art-fut {
+        font-size: .69rem;
+        /* letter-spacing: 2px; */
+    }
+    .art-content {
+        margin-top: .85rem;
+        padding-left: 0;
+      
+    }
+    .art-desc {
+        padding-top: .32rem;
+        font-size: .373rem;
+        width: 6.666rem;
+        line-height: .586rem;
+    }
+    /* pages3 */
+    .artboard2-copy .art-fut {
+        font-size: .693rem;
+        /* width: 7.12rem; */
+       
+    }
+    .mac {
+        position: absolute;
+        top: auto;
+        left: .54rem;    
+        
+        bottom: -.8rem;
+        /* right: 1.25rem; */
+       
+    }
+    .imac {
+        width: 7.9rem;
+        /* height: 7.36rem; */
+    }
+    .mac .iphone {
+        position: absolute;
+        /* width: 1.44rem; */
+        width: auto;
+        height: 3.7rem;
+        /* bottom: 0; */
+        /* right: -42px; */
+            
+        bottom: .8rem;
+        right: -0.3rem;
+    }
+
+    /* page4 */
+    .box5 .none-bg .art-fut {
+        font-size: .693rem;
+        /* width: 7.133rem; */
+    }
+    /* page5 */
+    .box6 .none-bg {
+        background: url('../img/澳门插画背景.png') no-repeat;
+        background-size: cover;
+    }
+    .artboard3-copy .art-fut {
+        font-size: .693rem;
+        width: 7.5rem;
+    }
+    /* page6 */
+    .artboard-tab {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .tab-cn {
+       
+        width: 100%;
+        background-color: #f0f2f5;
+    }
+    .tab-bg {
+        display: none;
+    }
+    .artboard-tab .art-word {
+        width: auto;
+        padding: 0;
+    }
+    
+    .artboard-tab .art-content {
+        width: auto;
+        padding: 0 .2rem;
+        padding-top: .3rem;
+    }
+    .artboard-tab .art-title {
+        padding-left: .533rem;
+    }
+    .tab-list {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .tab-list .item {
+        width: 4.733rem;
+        height: 2.666rem;
+        margin-bottom: .266rem;
+    }
+    .tab-list .item span {
+        width: 100%;
+        height: 100%;        
+        background: url('../img/华为_选中.png') no-repeat;
+        background-size: contain;
+       
+    }
+    .tab-list .active {
+        width: 4.2rem;
+        height: 2.133rem;
+        background: url('../img/华为_选中.png');
+        background-size: 100%; 
+    }
+    
+    .tab-list .item:nth-of-type(2) span {
+       
+        background: url('../img/建行_选中_mobil.png') no-repeat;
+        background-size: contain;
+    }
+    .tab-list .item:nth-of-type(3) span {
+        background: url('../img/阿里_选中_mobil.png') no-repeat;
+        background-size: contain;
+    }
+    .tab-list .item:nth-of-type(4) span {
+        background: url('../img/京东_选中_mobil.png') no-repeat;
+        background-size: contain;
+    }
+    .tab-list .item:nth-of-type(5) span {
+        background: url('../img/橙天_选中_mobil.png') no-repeat;
+        background-size: contain;    }
+    .tab-list .item:nth-of-type(6) span {
+        background: url('../img/Momenta_选中_mobil.png') no-repeat;
+        background-size: contain;    }
+    .tab-list .item:nth-of-type(7) span {
+        background: url('../img/Garmin_选中_mobil.png') no-repeat;
+        background-size: contain;    }
+    .tab-list .item:nth-of-type(8) span {
+        background: url('../img/吉利_选中_mobil.png') no-repeat;
+        background-size: contain;    }
+    
+    
+    .tab-list .item:nth-of-type(2n-1) {
+        margin-right: auto;
+    }
+    
+    /* foot */
+
+    .box-bg-man .item1 {
+        background: url('../img/post-foot/20180625-首页联系我们-03-m.png') no-repeat;
+        background-size: contain;
+        width: 4.68rem;
+        height: 5.61rem;
+        left: -0.15rem;
+        top: 8.65rem;
+    }
+    .box-bg-man .item2 {
+        width: 6.546rem;
+        height: 3.18rem;
+        left: 0;
+        top: 10.41rem;
+    }
+    .box-bg-man .item3 {
+        width: .81rem;
+        height: .81rem;
+        left: 4.1rem;
+        top: 10.76rem;
+    }
+    .box-bg-man .item4 {
+       
+        width: .28rem;
+        height: .28rem;
+        left: .146rem;
+        top: 13.92rem;
+    }
+    .box-bg-man .item5 {
+        width: .52rem;
+        height: .52rem;
+        left: 2.266rem;
+        top: 14.5rem;
+    }
+    
+    .box-bg-woman .item1 {
+       
+        width: .85rem;
+        height: .85rem;
+        right: .26rem;
+        bottom: 3.413rem;
+    }
+    .box-bg-woman .item2 {
+       
+        width: 2.78rem;
+        height: 2.73rem;
+        right: .5rem;
+        bottom: 1.8rem;
+    }
+    .box-bg-woman .item3 {
+      
+        width: .266rem;
+        height: .266rem;
+        right: 2.4rem;
+        bottom: 2.65rem;
+    }
+    .box-bg-woman .item4 {
+       
+        width: .44rem;
+        height: .44rem;
+        right: .9rem;
+        bottom: 2.02rem;
+    }
+    
+    .foot-desc {
+        position: absolute;
+        /* display: flex; */
+        top: 30%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .foot-container-des {
+        /* display: block; */
+        width: 8.05rem;
+        font-size: .48rem;
+        line-height: .72rem;
+       
+    }
+    .foot-container-call {
+        display: inline-block;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: .533rem;
+        width: 5.333rem;
+        height: 1.17rem;
+        line-height: 1.17rem;
+        text-align: center;
+        border-radius: .586rem;
+        color: #9067E3;
+        font-size: .373rem;
+        cursor: pointer;
+    }
+
+    /* true foot */
+    .foot-bar {
+        height: auto;
+       
+        padding: 1.333rem 0 0 0;
+        
+       
+    }
+    .foot-bar .nav-list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 1.2rem;
+    }
+    .foot-message {
+        height: auto;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        color: #fff;
+        margin: 0 .533rem;
+    }
+    .foot-title {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .foot-des {
+        padding: .6rem 0 0 0;
+        font-size: .32rem;
+        line-height: .533rem;
+        width: 8.9rem;
+        text-align: center;
+    }
+    .foot-logo {
+       
+        width: 2.893rem;
+        height: .64rem;
+    }
+
+    .foot-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .foot-message .nav-list,
+    .foot-message .e-mail,
+    .foot-message .address {
+        
+        font-size: .32rem;
+        
+    }
+    .foot-message .address {
+        text-align: center;
+        width: 7rem;
+        padding-bottom: .64rem;
+        
+    }
+    .foot-message .nav-list li:nth-of-type(1) {
+        padding-left: 0;
+        margin-left: 0;
+        list-style: none;
+    }
+    .foot-message .nav-list li{
+        font-size: .32rem;
+        height: auto;
+    }
+    .foot-info {
+        float: right;
+        /* display: inline-block; */
+    }
+    .foot-title {
+        /* display: inline-block; */
+        text-align: left;
+        float: left;
+    }
+
+    .foot-gr {
+       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        line-height: 36px;
+        font-size: 16px;
+    }
+    .foot-icon {
+        padding-top: .666rem;
+        display: flex;
+        justify-content: space-between;
+        width: 3.73rem;
+        /* height: 1.06rem; */
+    }
+    
+    .wx-logo {
+        height: 1.06rem;
+        width: 1.06rem;
+    }
+    .weibo-logo {
+        
+        height: 1.06rem;
+        width: 1.06rem;
+    }
+    .foot-gr .license {
+        font-family: 'DIN-Alternate-Bold';
+        padding: .6rem 0;
+        letter-spacing: -.7px;
+        font-size: .3rem;
+        float: right;
+    }
+}

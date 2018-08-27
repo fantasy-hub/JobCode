@@ -1,0 +1,67 @@
+.swiper-container {
+    background-color: #141d29;
+    height: 100vh;
+
+}
+.swiper-wrapper{
+transition-delay:.3s;
+}
+
+.swiper-slide {
+    /* overflow-y: auto; */
+}
+.swiper-slide>div{
+    transform: scale(0.6, .7);
+    /* opacity: 0; */
+    transition: transform 1.2s cubic-bezier(.25,.01,.25,1)}
+.ani-slide>div{
+    transform: scale(1);    
+    /* opacity:1; */
+}
+
+/* 分页器样式 */
+.swiper-pagination-custom  {
+    right: .86rem;
+    bottom: auto;
+    top: 50%; 
+    left: auto;
+    
+    color: #fff;
+    width: .125rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+ .swiper-pagination-customs {
+    width: 0.069rem;
+    height: 0.0138rem;
+    border-top: 0.0138rem solid #fff;
+    padding-bottom: .083rem;
+    margin-bottom: .2rem;
+    /* transition: all .5s; */
+    /* background-color: #fff; */
+    opacity: .5;
+    z-index: 100;
+    float: right;
+  
+}
+.active {
+    width: .111rem;
+    opacity: 1;
+} 
+.unfold {
+    width:0.069rem;
+    opacity: .5;
+    margin-bottom: .083rem;
+}
+.unfold:nth-of-type(1) {
+    width: .111rem;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-pagination-custom {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,174 @@
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
+
+.header {
+    position: fixed;
+    box-sizing: border-box;
+    /* height: 160px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 .833rem;
+    padding-top: .638rem;
+    z-index: 100;
+    transition: all .5s;
+}
+.logo {
+    background: url('../img/xiaox@2x.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 167px;
+    height: 36px;
+    
+    transition: all .5s;
+}
+.nav {
+    color: #fff;
+   
+    
+}
+.nav-list {
+    /* height: 80px; */
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    transition: all .5s;
+}
+.nav-list li {
+    float: left;
+    margin-left: 0.416rem;
+    cursor: pointer;
+    white-space: nowrap 
+}
+.nav-list .nav-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    width:180px;
+    height:56px;
+    font-size: 16px;
+    color: #fff;
+    border-radius:30px;
+    background:linear-gradient(-145.7deg,rgba(136,103,227,1),rgba(78,64,177,1));
+    box-shadow:0px 8px 20px 0px rgba(94,79,196,0.42);
+}
+
+@media screen and (max-width: 768px) {
+    /* .header {
+        height: 12.49rem;   
+    } */
+
+    /* 菜单栏展开状态 */
+    .header-h {
+        display: block;
+        padding-top: 2.26rem !important;
+        padding-bottom: 1.333rem;
+        background-color: #fff;
+        animation: .5s opac forwards;
+    }
+    /* 菜单展开按钮 */
+    .nav-close {
+        position: absolute;
+        position: fixed;
+        right: .55rem;
+        
+        top: 1.57rem;
+        /* top: .746rem; */
+        width: .49rem;
+        height: .49rem;
+        z-index: 100;
+        transition: .5s all;
+    }
+    .nav-close .line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: .49rem;
+        height: .053rem;
+        background:#fff;
+        border-radius: 2px;
+        transition: .5s all;
+    }
+    .nav-close-black .line {
+        background: #000;
+    }
+    .nav-close .line:nth-of-type(1) {
+        transform: translateY(-16px) rotate(0deg);
+        
+    }
+    .nav-close .line:nth-of-type(2) {
+        transform: translateY(-6px) rotate(0deg);
+        
+    }
+    /* 菜单栏展开状态 */
+    .nav-close-h {
+        top: .746rem;
+    }
+    .nav-close-h .line{
+        background-color: black;
+    }
+    .nav-close-h .line:nth-of-type(1) {
+        transform: translateY(-11px) rotate(45deg);
+    }
+    .nav-close-h .line:nth-of-type(2) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    /* logo */
+    .logo {
+        background: url('../img/xiaox@2x.png') no-repeat;
+        background-size: 100% !important;
+        position: absolute;
+        top: 1.57rem;
+        /* top: .746rem; */
+        left: .533rem;
+        width: 2.733rem;
+        height: .586rem;
+    }
+    /* 菜单栏展开状态 */
+    .logo-h {
+        top: .746rem;
+        background: url('../img/xiaox_black@2x.png') no-repeat;
+
+    }
+    /* 导航栏 */
+    .nav {
+        display: none;
+        color: #102039;
+    }
+    .nav-list {
+      
+        display: block;
+    }
+    .nav-list li {
+      
+        display: flex;
+        align-items: center;
+        float: none;
+        margin-left: 0;
+        justify-content: center;
+        height: 1.93rem;
+        font-size: .426rem;
+    }
+    /* 联系我们 */
+    .nav-list .nav-call {
+        color: #102039;
+      
+        width: 100% !important;
+        height: 1.93rem !important;
+        font-size: .426rem !important;
+        background: none;
+        box-shadow: none;
+    }
+}
+   
+    
+  

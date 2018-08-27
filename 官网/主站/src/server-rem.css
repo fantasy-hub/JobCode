@@ -1,0 +1,921 @@
+@keyframes slide-80 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 80px, 0);
+        transform: translate3d(0, 80px, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+@keyframes slide-60 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 60px, 0);
+        transform: translate3d(0, 60px, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+@keyframes slide-40 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+@keyframes slide-20 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+@font-face {
+    font-family: 'PingFang-SC-Medium';
+    src: url("../fonts/PingFang-SC/PingFang-SC-Medium.woff") format("woff");
+    }
+body {
+    font-family: 'PingFang-SC-Medium';
+}
+li {
+    list-style: none;
+}
+
+
+.header {
+    position: absolute;
+}
+
+/* :root {
+    --mouseX: 0deg;
+    --mouseY: 0deg;
+} */
+.header-content {
+    position: relative;
+    background:linear-gradient(-145.7deg,rgba(164,131,232,1),rgba(111,100,192,1));
+    overflow: hidden;
+    transition: transform .5s;
+}
+.header-content-title {
+    font-size: 0.2917rem;
+    color: #fff;
+    line-height: 4.1667rem;
+    margin-left: 0.6944rem;
+}
+.header-content::after {
+    content: "";
+    position: absolute;
+    width: 1.3889rem;
+    height: 1.25rem;
+    background: url('../img/server/Group_12.png') no-repeat;
+    top: 1.7986rem;
+    left: 7.1528rem;
+}
+
+/* 主背景样式 */
+/* big星球 */
+.asteroid-style {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+}
+.headicon {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: animation 1s ease-out, transform 1s ease-out;
+}
+.asteroid-style .icon-1 {
+    position: absolute;
+    left: 4.9306rem;
+    top: 1.5486rem;
+    width: 0.1944rem;
+    height: 0.1944rem;
+    background:linear-gradient(-142.5deg,rgba(185,157,255,1),rgba(127,110,203,0.7),rgba(124,108,201,0));
+    box-shadow:0.0139rem -0.0139rem 0.0278rem 0rem rgba(119,103,190,0.08);
+    border-radius: 50%;
+    animation: slide-80 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(200px);
+}
+/* small星球 */
+.asteroid-style .icon-2 {
+    position: absolute;
+    left: 5.8611rem;
+    top: 2.3681rem;
+    width: 0.1111rem;
+    height: 0.1111rem;
+    background:linear-gradient(-142.5deg,rgba(197,174,255,1),rgba(140,120,229,0.7),rgba(124,108,201,0));
+    box-shadow:0.0139rem -0.0139rem 0.0278rem 0rem rgba(119,103,190,0.08);
+    border-radius: 50%;
+    animation: slide-40 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(100px);
+}
+.asteroid-style .icon-3 {
+    position: absolute;
+    left: 6.6319rem;
+    top: 2.2847rem;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    background: url('../img/server/Rectangle_5.png') no-repeat;
+    animation: slide-60 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(150px);
+}
+.asteroid-style .icon-4 {
+    position: absolute;
+    left: 8.2847rem;
+    top: 1.4375rem;
+    width: 0.1319rem;
+    height: 0.1319rem;
+    background: url('../img/server/Rectangle_3.png') no-repeat;
+    animation: slide-40 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(100px);
+}
+.asteroid-style .icon-5 {
+    position: absolute;
+    left: 8.5694rem;
+    top: 1.75rem;
+    width: 0.0903rem;
+    height: 0.0903rem;
+    background: url('../img/server/Rectangle_4.png') no-repeat;
+    animation: slide-20 .8s cubic-bezier(.4, 0, .2, 1) 0s 1;
+    transform: translateZ(50px);
+}
+
+
+/* 主体部分 */
+.container {
+    background-color: #f9f9fb;
+    padding-bottom: 0.2778rem;
+    box-sizing: inherit;
+}
+.server {
+    max-width: 8.6111rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow:0.0417rem 0.1319rem 0.2083rem 0rem rgba(102,98,136,0.1);
+    transform: translateY(-1.25rem);
+    border-radius: 0.1111rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5556rem 0.3333rem;
+}
+.server-writing {
+    flex: 1;
+}
+.server-writing-title {
+    font-size: 0.2222rem;
+    color: #333;
+    line-height: 0.3194rem;
+}
+.server-writing-desc {
+    color: #888;
+    font-size: 0.0972rem;
+    max-width: 3.3333rem;
+    line-height: 0.1667rem;
+}
+.server-writing-desc p {
+    margin-top: 0.1944rem;
+}
+
+.server-closed {
+    flex: 1;
+}
+
+/* 服务体系 */
+.system {
+    /* max-width: 8.6111rem; */
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow:0.0417rem 0.1319rem 0.2083rem 0rem rgba(102,98,136,0.1);
+    transform: translateY(-0.9722rem);
+    border-radius: 0.1111rem;
+}
+
+.collaborators-title,
+.field-title,
+.system-title {
+    padding-top: 0.5556rem;
+    padding-bottom: 0.4167rem; 
+    font-size: 0.2222rem;
+    text-align: center;
+}
+.system-switch {
+    margin: 0 auto;
+    max-width: 7.9167rem;
+    height: 0.5556rem;
+    background-color: #EDEDF3;
+    border-radius:0.1111rem;
+    display: flex;
+
+}
+.system-switch-item {
+    flex: 1;
+    text-align: center;
+    font-size: 0.1667rem;
+    line-height: 0.5556rem;
+}
+.system-switch .active {
+    background:linear-gradient(-145.7deg,rgba(144,103,227,1),rgba(78,64,177,1));
+    border-radius:0.1111rem;
+    color: #fff;
+}
+
+.system-project {
+    margin-top: 0.4028rem;
+    /* 添加select隐藏 */
+    display: none;
+}
+/* 添加tab切换 */
+.system-project.select {
+    display: block;
+}
+.system-project-img {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 2.6597rem;
+    height: 2.6389rem;
+    background: url('../img/server/Group\ 20.png') no-repeat;
+}
+.system-project-list {
+    display: inline-block;
+    width: 5.9028rem;;
+    list-style: none;
+    vertical-align: top;
+}
+.system-project-item {
+    display: inline-block;
+    padding: 0.1389rem 0.4167rem 0.2431rem 0.3125rem;
+    vertical-align: top;
+}
+.system-project-item h3 {
+    font-size: 0.125rem;
+}
+.system-project-item p {
+    padding-top: 0.0556rem;
+    line-height: 0.1667rem;
+    width: 1.1111rem;
+    font-size: 0.0972rem;
+    color: #888;
+}
+
+/* 服务领域 */
+.field {
+    /* max-width: 8.6111rem; */
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow:0.0417rem 0.1319rem 0.2083rem 0rem rgba(102,98,136,0.1);
+    transform: translateY(-0.6944rem);
+    border-radius: 0.1111rem;
+}
+
+.field-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.field-item {
+    flex: 1;
+    text-align: center;
+   
+
+}
+.field-item-title,
+.field-item-img,
+.field-item-desc {
+    max-width: 2.5rem;
+    display: inline-block;
+    text-align: left;
+}
+.field-item-img {
+    border-radius: 0.0694rem;
+}
+
+.field-item-title {
+    padding-top: 0.1667rem;
+    font-size: 0.125rem;
+}
+.field-item-desc {
+    padding-top: 0.0556rem;
+    padding-bottom: 0.1111rem;
+    font-size: 0.0972rem;
+    color: #888;
+    line-height: 0.1667rem;
+}
+.field-item-status {
+    border-top: 0.0069rem solid rgba(219,220,230,0.4);
+    max-width: 2.5rem;
+    padding: 0.0556rem 0 0.2778rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.0972rem;
+    height: 0.1667rem;
+}
+.field-item-status .status i {
+    display: inline-block;
+    vertical-align: text-bottom;
+    /* float: left; */
+    width: 0.125rem;
+    height: 0.125rem;
+    background: url('../img/server/已完成.png') no-repeat;
+    padding-right: 0.0278rem;
+}
+.field-item-status .success {
+    color: #50E3C2;
+}
+.field-item-status .success i{
+    background: url('../img/server/已完成\ copy.png') no-repeat;
+}
+
+/* 合作伙伴 */
+.collaborators {
+    /* max-width: 8.6111rem; */
+    /* height: 4.3194rem; */
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow:0.0417rem 0.1319rem 0.2083rem 0rem rgba(102,98,136,0.1);
+    transform: translateY(-0.4167rem);
+    border-radius: 0.1111rem;
+}
+.collaborators-list {
+    display: flex;
+    max-width: 7.7778rem;
+    margin: 0 auto;
+    padding-bottom: 0.1389rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.collaborators-item {
+    flex: 0 0 25%;
+    margin-bottom: 0.4167rem;
+    height: 0.5556rem;
+    text-align: center;
+}
+.collaborators-item img {
+    width: 1.25rem;  
+}
+
+/* 联系我们 */ 
+.callme {
+    position: relative;
+    max-width: 8.6111rem;
+    height: 2.0833rem;
+    transform: translateY(-0.1389rem);
+    margin: 0 auto;
+    background:linear-gradient(-145.7deg,rgba(164,131,232,1),rgba(111,100,192,1));
+    border-radius: 0.1111rem;
+}
+.callme-title {
+    padding: 0.6667rem 0 0.2778rem 0;
+    text-align: center;
+    font-size: 0.1667rem;
+    color: #fff;
+}
+.callme-button {
+    width:0.9722rem;
+    height:0.3333rem;
+    margin: 0 auto;
+    background:rgba(255,255,255,1);
+    color: #9067E3;
+    border-radius:0.1667rem;
+    font-size: 0.1111rem;
+    text-align: center;
+    line-height: 0.3333rem;
+}
+/* 联系我们背景样式 */
+.callme-style .icon-1 {
+    position: absolute;
+    left: -0.2986rem;
+    top: 1.0833rem;
+    width: 0.8958rem;
+    height: 0.9236rem;
+    background: url('../img/server/Group\ 14.png');
+}
+.callme-style .icon-2 {
+    position: absolute;
+    left: 0.2847rem;
+    top: 1.2014rem;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    background: url('../img/server/Rectangle_5.png') no-repeat;
+}
+.callme-style .icon-3 {
+    position: absolute;
+    left: 0.7986rem;
+    top: 0.4653rem;
+    width: 0.0694rem;
+    height: 0.0764rem;
+    background: url('../img/server/Rectangle\ Copy\ 12.png') no-repeat;
+}
+.callme-style .icon-4 {
+    position: absolute;
+    left: 1.0069rem;
+    top: 0.6597rem;
+    width: 0.0417rem;
+    height: 0.0417rem;
+    background: url('../img/server/Rectangle\ Copy\ 13.png') no-repeat;
+}
+.callme-style .icon-5 {
+    position: absolute;
+    left: 2.7431rem;
+    top: 1.0625rem;
+    width: 0.0556rem;
+    height: 0.0556rem;
+    background: url('../img/server/Rectangle\ Copy\ 6.png') no-repeat;
+}
+.callme-style .icon-6 {
+    position: absolute;
+    left: 2.9236rem;
+    top: 1.2708rem;
+    width: 0.0278rem;
+    height: 0.0347rem;
+    background: url('../img/server/Rectangle\ Copy\ 7.png') no-repeat;
+}
+.callme-style .icon-7 {
+    position: absolute;
+    left: 3.1806rem;
+    top: 1.2361rem;
+    width: 0.1667rem;
+    height: 0.1667rem;
+    background: url('../img/server/Oval\ Copy\ 13.png') no-repeat;
+}
+.callme-style .icon-8 {
+    position: absolute;
+    left: 6.1458rem;
+    top: 0.4931rem;
+    width: 0.0417rem;
+    height: 0.0417rem;
+    background: url('../img/server/Rectangle\ Copy\ 10.png') no-repeat;
+}
+.callme-style .icon-9 {
+    position: absolute;
+    left: 6.6181rem;
+    top: 0.3264rem;
+    width:0.1875rem;
+    height: 0.1875rem;
+    background: url('../img/server/Oval\ Copy\ 14.png') no-repeat;
+}
+.callme-style .icon-10 {
+    position: absolute;
+    left: 6.7431rem;
+    top: 1.6319rem;
+    width: 0.0417rem;
+    height: 0.0417rem;
+    background: url('../img/server/Rectangle\ Copy\ 11.png') no-repeat;
+}
+.callme-style .icon-11 {
+    position: absolute;
+    left: 7.625rem;
+    top: 1.3819rem;
+    width: 0.0417rem;
+    height: 0.0417rem;
+    background: url('../img/server/Rectangle\ Copy\ 9.png') no-repeat;
+}
+.callme-style .icon-12 {
+    position: absolute;
+    left: 7.9028rem;
+    top: 0.8264rem;
+    width: 0.3889rem;
+    height: 0.3889rem;
+    background: url('../img/server/Oval\ Copy\ 12.png') no-repeat;
+}
+.callme-style .icon-13 {
+    position: absolute;
+    left: 8.2014rem;
+    top: 1.6597rem;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    background: url('../img/server/Rectangle\ Copy\ 8.png') no-repeat;
+}
+
+
+
+.wap {
+    display: none;
+}
+/* 适配移动端 */
+@media screen and (max-width: 750px){
+    body { 
+        width: inherit;
+    }
+    .web {
+        display: none;
+    }
+
+    .nav-close {
+        position: absolute;
+    }
+
+    .nav-list li {
+        float: none;
+        margin-left: 0;
+        color: #102039;
+    }
+
+    .header {
+        padding: 0;
+        padding-top: 1.6133rem;
+    }
+    .header-content {
+        height: 13.3333rem;
+    }
+    .header-content-title {
+        font-size: .64rem;
+        max-width: 6.4rem;
+        margin-left: .5333rem;
+        margin-top: 6.1333rem;
+        line-height: 1.458;
+        height: 8rem;
+        overflow: hidden;
+    }
+    .header-content-title .last-line {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .asteroid-style .icon-1 {
+        top: 3.6666rem;
+        left: 1.1866rem;
+        width: .56rem;
+        height: .56rem;
+        background-size: .56rem .56rem;
+    }
+    .asteroid-style .icon-2 {
+        left: 2.9733rem;
+        top: 5.08rem;
+        width: .32rem;
+        height: .32rem;
+        background-size: .32rem .32rem;
+    }
+    .asteroid-style .icon-3 {
+        left: 7.3466rem;
+        top: 4.4rem;
+        width: .1866rem;
+        height: .1866rem;
+        background-size: .1866rem .1866rem;
+    }
+    .asteroid-style .icon-4 {
+        left: 8.12rem;
+        top: 7.4133rem;
+        width: .3866rem;
+        height: .3866rem;
+        background-size: .3866rem .3866rem;
+    }
+    .asteroid-style .icon-5 {
+        left: 8.9466rem;
+        top: 8.32rem;
+        width: .2666rem;
+        height: .2666rem;
+        background-size: .2666rem .2666rem;
+    }
+    .header-content::after {
+        left: 4.8666rem;
+        top: 8.4533rem;
+        width: 4rem;
+        height: 1.6266rem;
+        background-size: 4rem 1.6266rem;
+    }
+
+
+    .wap {
+        display: block;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        cursor: pointer;
+        color:rgba(255,255,255,1);
+        /* margin-bottom: 22725px; */
+    }
+    .wap-server {
+        position: relative;
+    }
+    .wap-server-ct {
+        margin-right: 0.5866rem;
+    }
+    .wap-server-child {
+        display: inline-block;
+        font-size: 0.32rem;
+        line-height: 1.375;
+    }
+    .wap-server-ct .dif {
+        margin-right: 0.2533rem;
+    }
+    .wap-server-item {
+        display: none;
+        margin-top: 0.2666rem;
+        font-size: 0.32rem;
+        line-height: 1.375;
+    }
+    .wap-server-item .decresize {
+        font-size: 0.2666rem;
+        line-height: 1.7;
+    }
+
+    .container {
+        padding-left: 0.5333rem;
+        padding-right: 0.5333rem;
+    }
+    .server {
+        padding: 1.0666rem 0.4266rem;
+        display: block;
+        transform: translateY(-2.4rem);
+    }
+    .server-writing-title {
+        font-size: 0.48rem;
+        line-height: 0.6666rem;
+        font-weight: bold;
+    }
+    .server-writing-desc {
+        max-width: inherit;
+    }
+    .server-writing-desc {
+       font-size: 0.3733rem;
+       line-height: 0.5866rem; 
+    }
+    .server-writing-desc p {
+        margin-top: 0.4rem;
+    }
+    .server-closed {
+        max-width: 7.6266rem;
+        margin: 0 auto;
+    }
+    .server-closed img {
+        /* width: 572rem; */
+        width: 100%;
+        margin-top: 1.0666rem;
+    }
+
+    .system-title {
+        padding-bottom: 0.5333rem;
+    }
+    .system-switch {
+        /* display: block; */
+        max-width: 8.08rem;
+        height: inherit;
+        background: inherit;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .system-switch-item {
+        display: flex;
+        flex: inherit;
+        flex-shrink: 1;
+        font-size: 0.32rem;
+        line-height: 1.375;
+        margin-bottom: 0.32rem;
+        padding: 0.32rem 1.2266rem 0.3066rem 1.2266rem;
+        background:rgba(237,237,243,1);
+        border-radius: 0.2133rem;
+    }
+    .system-switch .active {
+        border-radius: 0.2133rem;
+    }
+    .system-project {
+        margin-top: 0.48rem;
+    }
+    .system-project-list {
+        padding: 0.2666rem 0.4266rem 0 0.4266rem;
+        width: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .system-project-item {
+        max-width: 3.7333rem;
+        padding: 0;
+        margin-bottom: 0.5466rem;
+    }
+    .system-project-item h3 {
+        font-size: 0.3733rem;
+        line-height: 0.5333rem;
+    }
+    .system-project-item p {
+        font-size: 0.32rem;
+        line-height: 0.48rem;
+        max-width: 3.7333rem;
+        width: inherit;
+    }
+    .system-project-img {
+        width: 5.7333rem;
+        height: 5.44rem;
+        background-size: contain;
+    }
+
+    .collaborators-list {
+        max-width: inherit;
+        margin: inherit;
+    }
+    .collaborators-title, .field-title, .system-title {
+        font-size: 0.48rem;
+    }
+
+    .field-list {
+        justify-content: space-between;
+        padding-left: 0.4266rem;
+        padding-right: 0.4266rem;
+    }
+    .field-item {
+        max-width: 3.8666rem;
+        position: relative;
+    }
+    .field-item-status .status i {
+        padding-right: 0.1066rem;
+        background-size: 0.4rem 0.4rem;
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+    .field-item-status .name {
+        font-weight: bold;
+    }
+    .field-item-title, .field-item-img, .field-item-desc {
+        max-width: 3.8666rem;
+    }
+    /* .field-cover {
+        position: relative;
+
+        display: flex;
+        font-size: 31.995px;
+        justify-content: center;
+
+    } */
+    /* .field-cover .bg {
+        padding-top: 54px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 9.9975px;
+    }  */
+    /* .field-cover h3 {
+        font-size: 31.995px;
+        font-weight: inherit;
+    } */
+    .field-item h3 {
+        width: 3.8666rem;
+        height: 1.946rem;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 0.17rem;
+        padding-top: inherit;
+        font-size: 0.4266rem;
+        text-align: center;
+        line-height: 1.946rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .field-item-desc {
+        padding-bottom: 0.2666rem;
+        font-size: 0.32rem;
+        line-height: 0.48rem;
+    }
+    .field-item-status {
+        flex-direction: column;
+        text-align: left;
+        padding-top: 0.2666rem;
+        margin: inherit;
+        margin-bottom: 0.8666rem;
+        font-size: 0.32rem;
+        line-height: 0.2533rem;
+        white-space: nowrap;
+    }
+    .field-item-status .name {
+        padding-bottom: 0.28rem;
+    }
+
+    .collaborators-list {
+        padding-bottom: 0.8rem;
+    }
+    .collaborators-item {
+        flex: inherit;
+        margin-bottom: 0.2666rem;
+        height: inherit;
+        border: 0.0133rem dashed;
+
+    }
+    .collaborators-item img {
+        width: 4rem;
+        height: 1.7733rem;
+    }
+
+    .callme {
+        height: inherit;
+        padding-bottom: 1.4rem;
+    }
+    .callme-title {
+        padding: 1.4rem 1.5466rem 0.5333rem 1.5866rem;
+        font-size: 0.48rem;
+        line-height: 0.72rem;
+    }
+    .callme-button {
+        width: 5.3333rem;
+        height: 1.1733rem;
+        border-radius: 0.5866rem;
+        font-size: 0.3733rem;
+        line-height: 1.1733rem;
+    }
+
+    .callme-style .icon-2,
+    .callme-style .icon-3,
+    .callme-style .icon-4, 
+    .callme-style .icon-5, 
+    .callme-style .icon-6, 
+    .callme-style .icon-7, 
+    .callme-style .icon-8,
+    .callme-style .icon-9,  
+    .callme-style .icon-10,
+    .callme-style .icon-11,
+    .callme-style .icon-12,
+    .callme-style .icon-13 {
+        display: none;
+    }
+    .callme-style .icon-1 {
+        left: -0.4533rem;
+        top: 4.6933rem;
+    }
+    .callme-style .icon-14 {
+        position: absolute;
+        left: 0.8266rem;
+        top: 5.3333rem;
+        width: 0.56rem;
+        height: 0.56rem;
+        background: url('../img/server/Oval\ Copy\ 13@2x.png') no-repeat;
+        background-size: 0.56rem 0.56rem;
+    }
+    .callme-style .icon-15 {
+        position: absolute;
+        left: 2.1866rem;
+        top: 3.4533rem;
+        width: 0.48rem;
+        height: 0.48rem;
+        background: url('../img/server/Oval\ Copy\ 13@2x.png') no-repeat;
+        background-size: 0.48rem 0.48rem;
+    }
+    .callme-style .icon-16 {
+        position: absolute;
+        left: 0.96rem;
+        top: 1.1733rem;
+        width: 0.2933rem;
+        height: 0.2933rem;
+        background: url('../img/server/Rectangle_3.png');
+        background-size: 0.2933rem 0.2933rem;
+    }
+    .callme-style .icon-17 {
+        position: absolute;
+        left: 0.4933rem;
+        top: 3.6666rem;
+        width: 0.12rem;
+        height: 0.16rem;
+        background: url('../img/server/Rectangle\ Copy\ 9@2x.png');
+        background-size: 0.12rem 0.16rem;
+    }
+    .callme-style .icon-18 {
+        position: absolute;
+        left: 6.36rem;
+        top: 0.9866rem;
+        width: 0.16rem;
+        height: 0.16rem;
+        background: url('../img/server/Rectangle\ Copy\ 9@2x.png');
+        background-size: 0.16rem 0.16rem;
+    }
+    .callme-style .icon-19 {
+        position: absolute;
+        left: 7.1466rem;
+        top: 0.4266rem;
+        width: 0.5466rem;
+        height: 0.5466rem;
+        background: url('../img/server/Oval\ Copy\ 14@2x.png') no-repeat;
+        background-size: 0.5466rem 0.5466rem;
+    }
+    .callme-style .icon-20 {
+        position: absolute;
+        left: 7.28rem;
+        top: 5.1466rem;
+        width: 1.12rem;
+        height: 1.12rem;
+        background: url('../img/server/Oval\ Copy\ 12@2x.png') no-repeat;
+        background-size: 1.12rem 1.12rem;
+    }
+}

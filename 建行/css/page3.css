@@ -1,0 +1,1209 @@
+@keyframes rightrun {
+    0% { transform: translateX(0); }
+    85% { transform: translateX(0.2rem);opacity: 1; }
+    100% { transform: translateX(0);opacity: 0.3; }
+}
+@keyframes lefttrun {
+    0% { transform: translateX(4rem); }
+    100% { transform: translateX(-5.5rem); }
+}
+@keyframes openleft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-5.36rem); }
+}
+@keyframes openright {
+    100% { transform: translateX(10rem); }
+}
+@keyframes rainbow {
+    0% { transform: scale(1); }
+    50% { transform: scale(.9); }
+    100% { transform: scale(1); }
+}
+@keyframes rainbow2 {
+    0% { transform: scale(.9); }
+    50% { transform: scale(1); }
+    100% { transform: scale(.9); }
+}
+@keyframes breath {
+    0% { transform: scale(.95); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(.95); }
+}
+@keyframes updown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(0.2rem); }
+    100% { transform: translateY(0); }
+}
+@keyframes breathY {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(1.1); }
+    100% { transform: scaleY(1); }
+}
+/* @keyframes scaleXL {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(1.1); }
+    100% { transform: scaleX(1); }
+}
+@keyframes scaleXR {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(1.1); }
+    100% { transform: scaleX(1); }
+} */
+@keyframes bounce {
+    0% {
+        transform: translateY(-100%);
+    }
+    30% {
+        transform: translateY(10%);
+    }
+    45% {
+        transform: translateY(-20%);
+    }
+    60% {
+        transform: translateY(5%);
+    }
+    75% {
+        transform: translateY(-10%);
+    }
+    85% {
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes bounceUp {
+    0% {
+        height: 50%;
+    }
+    /* 30% {
+        transform: translateY(10%);
+    }
+    45% {
+        transform: translateY(-20%);
+    }
+    60% {
+        transform: translateY(5%);
+    }
+    75% {
+        transform: translateY(-10%);
+    }
+    85% {
+        transform: translateY(2%);
+    } */
+    100% {
+        height: 4.83rem;
+    }
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'PingFang-SC-Regular';
+}
+
+
+.main {
+    height: 100%;
+    width: 10rem;
+    overflow: hidden;
+}
+
+
+.frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/MainScene/Licai/img_bg_ssgw_2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 理财推荐 */
+.swiper-container {
+    width: 10rem;
+    height: 17rem;
+    /* transform: translateY(-100vh); */
+    transform: translateY(0);
+    transition: all .5s;
+}
+
+.recommend {
+    width: 7.44rem;
+    height: 10.41rem;
+    background: url('../img/MainScene/Licai/img_ssgw_ka_1.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    /* left: 1.3rem;
+    top: 2rem;; */
+    transition: all .5s;
+    text-align: center;
+    /* transform: translateY(-70vh); */
+    /* opacity: 0;  */
+    color: #79F8FF;
+    animation: 1s bounce forwards ease-out;
+}
+.fall_down {
+    transform: translateY(0);
+}
+/* 理财名称 */
+.rec {
+    width: 3.7rem;
+    height: 2.76rem;
+    color: #6DB4DB;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_1_rect.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1.4rem;
+    text-align: left;
+    /* text-indent: 1rem; */
+    /* transform: translate(0, -.75rem) */
+}
+.rec-bg {
+    animation: 3s breath infinite;
+    width: 3.85rem;
+    height: 2.87rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_1.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+}
+.rec-title {
+    font-family: "PingFang-SC-Semibold";
+    padding: .935rem 0 0.25rem .5rem ;
+    font-weight: bold;
+    font-size: .426rem;
+}
+.rec-time {
+    padding-left: .5rem;
+    font-size: 0.222rem;
+}
+/* 利率百分比 */
+.interest {
+    margin: .6rem auto;
+    width: 4.037rem;
+    height: 4.037rem;
+    background: url('../img/MainScene/Licai/img_circle_5.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    /* box-shadow:0px 0px .23rem 0px rgba(121,248,255,0.6); */
+    /* border: .2rem solid #6DB4DB;
+    border-radius: 50%; */
+    color: #6DB4DB;
+}
+
+/* 利率环状进度条 */
+.clip {
+    width: 3.37rem;
+    height: 3.37rem;
+    position: absolute;
+    border-radius: 50%;
+    clip: rect(0 3.37rem 3.37rem 1.69rem);
+    top: 0.33rem;
+    left: 0.33rem;
+}
+.left-part {
+    width: 3.05rem;
+    height: 3.05rem;
+    position: absolute;
+    border: .16rem solid #6DB4DB;
+    border-radius: 50%;
+    clip: rect(0 1.69rem 3.37rem 0);
+    
+}
+.right-part {
+    width: 3.05rem;
+    height: 3.05rem;
+    position: absolute;
+    border: .16rem solid #6DB4DB;
+    border-radius: 50%;
+    clip: rect(0 3.37rem 3.37rem 1.69rem);
+}
+.auto {
+    clip: auto;
+}
+.width-none {
+    width: 0;
+}
+
+.interest-bg {
+    animation: 4s breath infinite;
+    width: 4.037rem;
+    height: 4.037rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_4.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    
+    top: 3.1rem;
+    right: 1rem;
+}
+.interest-per {
+    font-family: "DIN-Alternate-Bold";
+    font-size: 1.4rem;
+    font-size: .9rem;
+    /* line-height: 4rem; */
+    padding-top: 1.2rem;
+    font-weight: bold;
+}
+.interest-per span {
+    font-size: .7rem;
+}
+.interest-info {
+    color: #6DB4DB;
+    font-size: 0.296rem;
+    padding-top: .3rem;
+}
+
+/* 起购金额 */
+.rec-money-bg {
+    animation: 3s breath infinite;
+    width: 2.22rem;
+    height: 2.22rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_2.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    
+    left: 2.2rem;
+    top: 5.5rem;
+}
+.rec-money {
+    width: 1.56rem;
+    height: 1.56rem;
+    background: url('../img/MainScene/Licai/img_circle_3.png') no-repeat;
+    background-size: 100%;
+    color: #fff;
+    position: absolute;
+    font-size: .222rem;
+    left: 2.5rem;
+    top: 5.8rem;
+}
+.rec-money-start {
+    padding-top: .3rem;
+    line-height: .4rem;
+}
+.rec-money-start span {
+    font-size: .4rem;
+}
+
+/* 投资期限 */
+.rec-term-bg {
+    animation: 3s breath infinite;
+    width: 2.22rem;
+    height: 2.22rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_2.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    
+    left: 5.5rem;
+    top: 8.2rem;
+}
+.rec-term {
+    width: 1.56rem;
+    height: 1.56rem;
+    background: url('../img/MainScene/Licai/img_circle_3.png') no-repeat;
+    background-size: 100%;
+    color: #fff;
+    position: absolute;
+    font-size: .222rem;
+    
+    left: 5.85rem;
+    top: 8.5rem;
+}
+.rec-term-day {
+    padding-top: .3rem;
+    line-height: .4rem;
+}
+.rec-term-day span {
+    font-size: .4rem;
+}
+
+/* 金币背景 */
+.licai-bg-gold {
+    animation: 3s updown infinite;
+    width: .638rem;
+    height: .611rem;
+    background: url('../img/MainScene/Licai/img_gold_1.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 5.6rem;
+    left: 1.55rem;
+}
+.licai-bg-gold1 {
+    animation: 2s updown infinite;
+    width: .472rem;
+    height: .444rem;
+    background: url('../img/MainScene/Licai/img_gold_2.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 8rem;
+    left: 1.95rem;
+}
+.licai-bg-gold2 {
+    animation: 3.5s updown infinite;
+    width: .638rem;
+    height: .611rem;
+    background: url('../img/MainScene/Licai/img_gold_3.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 6.5rem;
+    left: 7.2rem;
+}
+.licai-bg-gold3 {
+    animation: 1.7s updown infinite;
+    width: .638rem;
+    height: .611rem;
+    background: url('../img/MainScene/Licai/img_gold_1.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 9.5rem;
+    left: 7.1rem;
+}
+.licai-bg-arrow {
+    width: 5.231rem;
+    height: 3.139rem;
+    background: url('../img/MainScene/Licai/img_arrow.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 6.63rem;
+    left: 1.3rem;
+}
+
+.option {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 14.11rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    /* opacity: 0; */
+    transition: all 1s;
+}
+.option::before {
+    content: '';
+    position: absolute;
+    left: 5rem;
+    width: .05rem;
+    height: 1rem;
+    background-color: rgba(150,166,176,1);
+}
+.option-unlike {
+    animation: 1.5s rainbow2 infinite;
+    position: absolute;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: url('../img/MainScene/Licai/icon_ssgw_jionglian.png') no-repeat;
+    background-size: 100%;
+    z-index: 200;
+}
+.option-like {
+    animation: 1.5s rainbow infinite;
+    position: absolute;
+    right: 2.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    background: url('../img/MainScene/Licai/icon_ssgw_xiaolian.png') no-repeat;
+    background-size: contain;
+    z-index: 200;
+}
+/*喜欢不喜欢弹窗*/
+.popup {
+    display: none;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+    z-index: 600;
+    /* // opacity: 0; */
+    transition: all 1s;
+}
+.popup-unlike {
+    position: absolute;
+    color: #96a6b0;
+    background: url('../img/LikeView/Intrest/icon_s1.png') no-repeat;
+    background-size: 100%;
+    bottom: 3.5rem;
+    left: 2.6rem;
+    width: 1.11rem;
+    height: 1.5rem;
+}
+.popup-unlike-ac {
+    background: url('../img/Page4_3/lian_3.png') no-repeat;
+    background-size: 100%;
+    height: 2.037rem;
+}
+
+.popup-like {
+    /* animation: 1s bounceUp forwards; */
+    position: absolute;
+    bottom: 3.5rem;
+    left: 6.3rem;
+    width: 1.11rem;
+    height: 4.83rem;
+    background:linear-gradient(rgba(252,122,118,1),rgba(239,47,62,1));
+    border-radius: 1.11rem;
+}
+.popup-like-ac {
+    background: url('../img/LikeView/Boring/icon_l_n.png') no-repeat;
+    background-size: 100%;
+    height: 3.667rem;
+}
+
+.popup-unlike-percent {
+    position: absolute;
+    top: -.9rem;
+    left: .2rem;
+    font-size: .38rem;
+    line-height: .35rem;
+    width: .888rem;
+    height: .824rem;
+}
+.popup-like-percent span,
+.popup-unlike-percent span{
+    font-size: .25rem;
+}
+.popup-like-percent {
+    position: absolute;
+    top: -.9rem;
+    left: .2rem;
+    font-size: .38rem;
+    line-height: .35rem;
+    width: .888rem;
+    height: .824rem;
+}
+.popup-like-face {
+    position: absolute;
+    top: 0rem;
+    left: -0.26rem;
+    background: url('../img/LikeView/Intrest/laugh.png') no-repeat;
+    background-size: 100%;
+    width: 1.66rem;
+    height: .88rem;
+}
+.popup-unlike-face {
+    position: absolute;
+    top: 0rem;
+    left: -0.28rem;
+    background: url('../img/LikeView/Boring/icon_yanlei_4.png') no-repeat;
+    background-size: 100%;
+    width: 1.666rem;
+    height: .88rem;
+}
+
+.change {
+    animation: 2s rainbow infinite;
+    position: absolute;
+    left: 3.7rem;
+    bottom: .6rem;
+    width: 2.722rem;
+    height: 1.333rem;
+    background: url('../img/MainScene/Licai/icon_ssgw_huanyihuan@2x.png') no-repeat;
+    background-size: 100%;
+    z-index: 500;
+}
+
+/* page2 银行卡*/
+.card-header {
+    width: 6.61rem;
+    height: 5.592rem;
+    background: url('../img/MainScene/Credit/img_ssgw_k_bg_5.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    
+}
+.card-banner {
+    width: 4.81rem;
+    height: 3.03rem;
+    position: absolute;
+    top: .8rem;
+    left: .9rem;
+}
+.card-title {
+    font-family: "PingFang-SC-Semibold";
+    font-size: .5rem;
+    color: #6DB4DB;
+    font-size: .389rem;
+    font-weight: bold;
+    line-height: .75rem;
+    transform: translateY(4.3rem);
+   
+}
+.card-bg {
+    width: 5.31rem;
+    height: 3.76rem;
+    position: absolute;
+    top: 6rem;
+    left: 1.1rem;
+}
+.card-bg-item {
+    background: url('../img/MainScene/Credit/img_ssgw_ka_bg_3.png') no-repeat;
+    background-size: 100%;
+    color: #fff;
+    width: 2.537rem;
+    height: .98rem;
+    font-size: .26rem;
+    line-height: .83rem;
+    text-align: center;
+    /* text-indent: .5rem; */
+}
+.card-bg-item:nth-of-type(1) {
+    position: absolute;
+    top: 0.3rem;
+    left: 1.5rem;
+}
+.card-bg-item:nth-of-type(2) {
+    position: absolute;
+    top: 1.7rem;
+    left: 3.7rem;
+}
+.card-bg-item:nth-of-type(3) {
+    position: absolute;
+    
+    top: 2.8rem;
+    left: 2.5rem;
+}
+.giftBox-lf {
+    animation: 2s breath infinite;
+    position: absolute;
+    
+    top: 6.6rem;
+    left: 1.3rem;
+    width: 2.63rem;
+    height: 2.84rem;
+    background: url('../img/MainScene/Credit/img_box_left.png') no-repeat;
+    background-size: 100%;
+}
+.giftBox-rt {
+    animation: 2s breath infinite;
+    position: absolute;
+    
+    top: 5.5rem;
+    left: 6.4rem;
+    width: 1.898rem;
+    height: 3.916rem;
+    background: url('../img/MainScene/Credit/img_box_right.png') no-repeat;
+    background-size: 100%;
+}
+
+
+/* page3 贵金属 */
+.gold-header {
+    width: 6.61rem;
+    height: 6.926rem;
+    background: url('../img/MainScene/Credit/img_ssgw_k_bg_5.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+.gold-banner {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+}
+.gold-title {
+    font-family: "PingFang-SC-Semibold";
+    font-size: .389rem;
+    font-weight: bold;
+    color: #6DB4DB;
+    line-height: .5rem;
+    transform: translateY(4rem);
+}
+.gold-info {
+    width: 6rem;
+    color: #6DB4DB;
+    font-size: 0.222rem;
+    line-height: .4rem;
+    margin: 0 auto;
+    transform: translateY(4.2rem);
+}
+.gold-bg {
+    animation: 2s breathY infinite;
+    width: 5.5rem;
+    height: 2.425rem;
+    background: url('../img/MainScene/Metal/Group3.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 7.3rem;
+    left: 3.05rem;
+}
+.gold-bg-item {
+    /* animation: none; */
+    color: #fff;
+    font-size: .35rem;
+    line-height: 1.9rem;
+}
+
+/* 产品详情 */
+.details3,
+.details2,
+.details1 {
+    display: none;
+}
+.details {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    color: #79F8FF;
+}
+.details-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../img/InfoView/Result/result_top_bg.png') no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+/* gold详情页 */
+.details-header {
+    width: 6.61rem;
+    height: 6.926rem;
+    background: url('../img/MainScene/Credit/img_ssgw_k_bg_5.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    text-align: center;
+}
+.details-banner {
+    
+    height: 6.9rem;
+    position: absolute;
+    top: -1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.details-title {
+    font-family: "PingFang-SC-Semibold";
+    font-size: .389rem;
+    font-weight: bold;
+    color: #6DB4DB;
+    line-height: .5rem;
+    transform: translateY(4.2rem);
+}
+.details-info {
+    width: 6rem;
+    color: #6DB4DB;
+    font-size: 0.222rem;
+    line-height: .4rem;
+    margin: 0 auto;
+    transform: translateY(4.3rem);
+}
+.details-bg-bottom {
+    animation: 2s breathY infinite;
+    width: 5.5rem;
+    height: 2.425rem;
+    background: url('../img/MainScene/Metal/Group3.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 7.3rem;
+    left: 3.05rem;
+}
+.details-bg-item {
+    color: #fff;
+    font-size: .35rem;
+    line-height: 1.9rem;
+    text-align: center;
+    
+}
+.closeDec {
+    animation: 1.5s rainbow infinite;
+    position: absolute;
+    top: 10.1rem;
+    right: .25rem;
+    width: .6rem;
+    height: .6rem;
+    background: url('../img/InfoView/Result/btn.png') no-repeat;
+    background-size: 100%;
+    z-index: 100;
+}
+
+/* 产品卡 */
+.details2-header {
+    width: 6.61rem;
+    height: 5.592rem;
+    background: url('../img/MainScene/Credit/img_ssgw_k_bg_5.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+.details2-banner {
+ 
+    width: 4.8rem;
+    height: auto;
+    position: absolute;
+    top: 0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.details2-title {
+    font-family: "PingFang-SC-Semibold";
+    text-align: center;
+    font-size: .5rem;
+    color: #6DB4DB;
+    font-size: .389rem;
+    font-weight: bold;
+    line-height: .75rem;
+    transform: translateY(4.3rem);
+}
+
+.details2-info {
+    width: 5.31rem;
+    height: 3.76rem;
+    position: absolute;
+    top: 1.8rem;
+    left: 1.1rem;
+}
+.details2-info-item {
+    background: url('../img/MainScene/Credit/img_ssgw_ka_bg_3.png') no-repeat;
+    background-size: 100%;
+    color: #fff;
+    width: 2.537rem;
+    height: .98rem;
+    font-size: .26rem;
+    line-height: .83rem;
+    text-align: left;
+    text-indent: .5rem;
+}
+.details2-info-item:nth-of-type(1) {
+    position: absolute;
+    top: 0.3rem;
+    left: 1.5rem;
+}
+.details2-info-item:nth-of-type(2) {
+    position: absolute;
+    top: 1.7rem;
+    left: 3.7rem;
+}
+.details2-info-item:nth-of-type(3) {
+    position: absolute;
+    
+    top: 2.8rem;
+    left: 2.5rem;
+}
+
+/* 理财产品 */
+.details1-rec {
+    width: 3.7rem;
+    height: 2.76rem;
+    color: #6DB4DB;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_1_rect.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: .5rem;
+    left: 1.4rem;
+    text-align: left;
+}
+.details1-rec-bg {
+    animation: 3s breath infinite;
+    width: 3.85rem;
+    height: 2.87rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_1.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+}
+.details1-title {
+    font-family: "PingFang-SC-Semibold";
+    padding: .9rem 0 0.25rem 0 ;
+    text-align: center;
+    font-size: .426rem;
+    font-weight: bold;
+}
+.details1-time {
+    text-align: center;
+    font-size: 0.222rem;
+}
+.details1 .interest {
+    text-align: center;
+}
+.details1-money-bg {
+    animation: 3s breath infinite;
+    width: 2.22rem;
+    height: 2.22rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_2.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    
+    left: 2.2rem;
+    top: 5.3rem;
+}
+.details1-money {
+    width: 1.56rem;
+    height: 1.56rem;
+    background: url('../img/MainScene/Licai/img_circle_3.png') no-repeat;
+    background-size: 100%;
+    color: #fff;
+    position: absolute;
+    font-size: .222rem;
+    left: 2.5rem;
+    top: 5.6rem;
+}
+.details1-money-start {
+    padding-top: .3rem;
+    line-height: .4rem;
+    text-align: center;
+}
+.details1-money-start span {
+    font-size: .4rem;
+}
+.details-bg .licai-bg-gold3 {
+    top: 9rem;
+}
+.details-bg .licai-bg-arrow {
+    top: 6.7rem;
+}
+.details1-term-bg {
+    animation: 3s breath infinite;
+    width: 2.22rem;
+    height: 2.22rem;
+    background: url('../img/MainScene/Licai/img_ssgw_k_bg_2.png') no-repeat;
+    background-size: 100%;
+    position: absolute;   
+    left: 5.5rem;
+    top: 7.45rem;
+}
+.details1-term {
+    width: 1.56rem;
+    height: 1.56rem;
+    background: url('../img/MainScene/Licai/img_circle_3.png') no-repeat;
+    background-size: 100%;
+    color: #fff;
+    position: absolute;
+    font-size: .222rem;
+    
+    left: 5.85rem;
+    top: 7.8rem;
+}
+.details1-term-day {
+    padding-top: .3rem;
+    line-height: .4rem;
+    text-align: center;
+}
+.details1-term-day span {
+    font-size: .4rem;
+}
+.details1-foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    color: #fff;
+    font-size: 0.296rem;
+}
+
+.robot {
+    width: 100%;
+    height: 7.9rem;
+    background: #fff;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+}
+/* 二维码 */
+.QR-code {
+    position: absolute;
+    left: 1.45rem;
+    top: 1.15rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    /* background: url('../static/img/InfoView/Result/avm.jpg') no-repeat;
+    background-size: 100%; */
+    opacity: 0;
+    transition: all .5s;
+}
+.QR-code-bg {
+    position: absolute;
+    left: .8rem;
+    top: .5rem;
+    width: 4.814rem;
+    height: 4.111rem;
+    background: url('../img/InfoView/Result/img_chat.png') no-repeat;
+    background-size: 100%;
+    opacity: 0;
+    transition: all .5s;
+}
+.robot-mv {
+    position: absolute;
+    left: 0.5rem;
+    top: -4rem;
+    width: 15rem;
+    height: 15rem;
+   
+}
+.pret {
+    position: absolute;
+    left: .7rem;
+    top: 3.7rem;
+    width: 4.5rem;
+    height: 1.5rem;
+    opacity: 0;
+    transition: all .5s;
+}
+.pret-arr {
+    position: absolute;
+    width: .685rem;
+    height: 1.213rem;
+    background: url('../img/InfoView/Result/img_arrow8.png') no-repeat;
+    background-size: 100%;
+}
+.pret-msg {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0.8rem;
+    width: 3.64rem;
+    height: .7rem;
+    background: url('../img/InfoView/Result/img_word_guijinshu.png') no-repeat;
+    background-size: 100%;
+}
+.pret3 {
+    width: 2.8rem;
+}
+.pret3 .pret-msg {
+    background: url('../img/InfoView/Result/img_word1.png') no-repeat;
+    background-size: 100%;
+    width: 2.96rem;
+    height: 1rem;
+}
+.pret2 {
+    width: 2.6rem;
+    height: 1.5rem;
+}
+.pret2 .pret-msg {
+    background: url('../img/InfoView/Result/img_word_xinyongka.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -0.2rem;
+    left: 1rem;
+    width: 1.58rem;
+    height: .7rem;
+}
+.pret1 .pret-msg {
+    position: absolute;
+    bottom: -0.2rem;
+    left: 1rem;
+}
+
+.water {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.44rem;
+}
+.water-item:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.44rem;
+    background: url('../img/InfoView/Result/img_bolang1.png') no-repeat;
+    background-size: 100%;
+}
+.water-item:nth-of-type(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.36rem;
+    background: url('../img/InfoView/Result/img_bolang2.png') no-repeat;
+    background-size: 100%;
+}
+.water-item:nth-of-type(3) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.83rem;
+    background: url('../img/InfoView/Result/img_bolang4.png') no-repeat;
+    background-size: 100%;
+}
+
+
+.swiper-container-son {
+    width: 10rem;
+    height: 11rem;
+    background: url('../img/MainScene/Licai/imgka1.png') no-repeat;
+    background-size: 6.416rem 8.9rem;
+    background-position: center;
+    position: absolute;
+    /* left: 2rem; */
+    top: 2rem;
+    
+}
+.swiper-container-son .swiper-slide {
+    background: url('../img/MainScene/Licai/img_ssgw_ka_1.png') no-repeat;
+    
+    background-size: 6.111rem 8.555rem;
+    background-position: 1.8rem 1.08rem;
+    /* margin-top: 2rem; */
+}
+.ani-slide {
+    transform: rotate3d(0, 0, 1, -90deg) !important;
+    transition: 0.4s all ease-in;
+}
+
+/* 提示页 */
+.prompt {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    z-index: 100;
+}
+/* 笑脸 */
+.prompt-face {
+    position: absolute;
+    width: 100%;
+    top: 13.9rem;
+    box-sizing: border-box;
+   
+    /* opacity: 0; */
+    transition: all 1s;
+}
+.prompt-face-like {
+    /* animation: 1.5s rainbow infinite; */
+    position: absolute;
+    right: 2.3rem;
+    width: 1.55rem;
+    height: 1.55rem;
+    background: url('../img/InfoView/Tips/icon_ssgw_xiaolian2.png') no-repeat;
+    background-size: 100%;
+    z-index: 200;
+}
+.prompt-face-unlike {
+    /* animation: 1.5s rainbow2 infinite; */
+    position: absolute;
+    left: 2.3rem;
+    width: 1.55rem;
+    height: 1.55rem;
+    background: url('../img/InfoView/Tips/icon_ssgw_jionglian2.png') no-repeat;
+    background-size: 100%;
+    z-index: 200;
+}
+.prompt-change {
+    position: absolute;
+    left: 3.7rem;
+    bottom: .6rem;
+    width: 2.722rem;
+    height: 1.333rem;
+    background: url('../img/InfoView/Tips/icon_ssgw_huanyihuan2.png') no-repeat;
+    background-size: 100%;
+    z-index: 500;
+}
+.prompt-top {
+    position: absolute;
+    top: 11.3rem;
+    left: 3.07rem;
+    width: 3.82rem;
+    height: 3rem;
+
+}
+.prompt-top-word {
+    /* position: absolute; */
+    width: 3.82rem;
+    height: 0.944rem;
+    background: url('../img/InfoView/Tips/Page4_0_txt1.png') no-repeat;
+    background-size: 100%;
+}
+.prompt-top-arrow {
+    /* position: absolute; */
+    width: .888rem;
+    height: 1.12rem;
+    margin: 0 auto;
+    margin-top: .5rem;
+    background: url('../img/InfoView/Tips/Page4_0_jt2.png') no-repeat;
+    background-size: 100%;
+}
+
+.prompt-bottom {
+    position: absolute;
+    
+    top: 15.25rem;
+    right: .5rem;
+    width: 3.2rem;
+    height: 2.02rem;
+}
+.prompt-bottom-word {
+    width: 2.03rem;
+    height: 0.92rem;
+    background: url('../img/InfoView/Tips/Page4_0_txt2.png') no-repeat;
+    background-size: 100%;
+    margin-left: 1.2rem;
+}
+.prompt-bottom-arrow {
+    width: 1.166rem;
+    height: .805rem;
+    /* margin-top: .3rem; */
+    background: url('../img/InfoView/Tips/Page4_0_jt1.png') no-repeat;
+    background-size: 100%;
+}
+
+.closeDec-main {
+    animation: 1.5s rainbow infinite;
+    position: absolute;
+    bottom: .18rem;
+    left: .278rem;
+    width: .87rem;
+    height: .87rem;
+    background: url('../img/Group\ 8.png') no-repeat;
+    background-size: 100%;
+    z-index: 100;
+}
+.closeDec-robo {
+    animation: 1.5s rainbow infinite;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url('../img/Group\ 7.png') no-repeat;
+    background-size: 100%;
+    z-index: 100;
+}
+
+/*点击打开大图*/
+.bigImg {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.bigImg img {
+    position: absolute;
+    width: 9rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.closeImg {
+    /*animation: 1.5s rainbow infinite;*/
+    position: absolute;
+    width: 0.926rem;
+    height: 0.926rem;
+    background: url('../img/chaBtn2.png') no-repeat;
+    background-size: contain;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+}

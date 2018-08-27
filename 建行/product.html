@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="./js/flexible.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/page3.css">
+    <title>数字红包</title>
+</head>
+<body>
+    <!-- 背景音乐 -->
+    <audio id="music-audio" src="./audio/bgm.mp3" autoplay="autoplay" loop="loop"></audio>
+    <div class="main">
+        <!-- 点击按钮 -->
+        <audio id="music-btn" src="./audio/btnClick.mp3" ></audio>
+        <!-- 产品推荐 -->
+        <audio id="licai" src="./audio/tj_licai.mp3" ></audio>
+        <!-- 喜欢与否 -->
+        <audio id="person" src="./audio/likeorUnlike.mp3" ></audio>
+
+        <!-- 机器人入场 -->
+        <audio id="admission" src="./audio/rebotIn.mp3" ></audio>
+        <!-- 机器人推荐语言 -->
+        <audio id="tex3" src="./audio/jiqi_licai.mp3" ></audio>
+        <audio id="tex2" src="./audio/jiqi_card.mp3" ></audio>
+        <audio id="tex1" src="./audio/jiqi_metal.mp3" ></audio>
+
+        <div class="frame"></div>
+        
+        <!-- 提示页 -->
+        <div class="prompt">
+            <div class="prompt-face">
+                <div class="prompt-face-like"></div>
+                <div class="prompt-face-unlike"></div>
+            </div>
+            <div class="prompt-change"></div>
+            <div class="prompt-top">
+                <div class="prompt-top-word"></div>
+                <div class="prompt-top-arrow"></div>
+            </div>
+            <div class="prompt-bottom">
+                <div class="prompt-bottom-word"></div>
+                <div class="prompt-bottom-arrow"></div>
+            </div>
+        </div>
+        
+        <div class="swiper-container swiper-container-father">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                        
+                    <div class="swiper-container swiper-container-son recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="licai-bg-arrow"></div>
+                                <div class="rec">
+                                    <p class="rec-title">乾元-私享荟</p>
+                                    <div class="rec-time">2018-91理财产品</div>
+                                    <div class="rec-bg"></div>
+                                </div>
+                                <div class="interest-bg"></div>
+                                <div class="interest">
+                                    <div class="clip">
+                                        <div class="left-part"></div>
+                                        <div class="right-part width-none"></div>
+                                    </div>                                  
+                                    <p class="interest-per">4.95<span>%</span></p>
+                                    <p class="interest-info">预计年化收益率</p> 
+                                    
+                                </div>
+                               
+                                <div class="rec-money-bg"></div>
+                                <div class="rec-money">
+                                    <div class="rec-money-start"><span>600</span>万<br>起购金额</div>
+                                   
+                                </div>
+                                <div class="rec-term-bg"></div>
+                                <div class="rec-term">
+                                    <div class="rec-term-day"><span>128</span>天<br>投资期限</div>
+                                </div>
+                                <div class="licai-bg">
+                                    
+                                    <div class="licai-bg-gold"></div>
+                                    <div class="licai-bg-gold1"></div>
+                                    <div class="licai-bg-gold2"></div>
+                                    <div class="licai-bg-gold3"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="licai-bg-arrow"></div>
+                                <div class="rec">
+                                    <p class="rec-title">乾元-善盈</p>
+                                    <div class="rec-time">2018-176理财产品</div>
+                                    <div class="rec-bg"></div>
+                                </div>
+                                <div class="interest-bg"></div>
+                                <div class="interest">
+                                    <div class="clip">
+                                        <div class="left-part"></div>
+                                        <div class="right-part width-none"></div>
+                                    </div>                                       
+                                    <p class="interest-per">5.2<span>%</span></p>
+                                    <p class="interest-info">预计年化收益率</p> 
+                                    
+                                </div>
+                                <div class="licai-bg-gold2"></div>
+                                <div class="rec-money-bg"></div>
+                                <div class="rec-money">
+                                    <div class="rec-money-start"><span>10</span>万<br>起购金额</div>
+                                    
+                                </div>
+                                <div class="rec-term-bg"></div>
+                                <div class="rec-term">
+                                    <div class="rec-term-day"><span>142</span>天<br>投资期限</div>
+                                </div>
+                                <div class="licai-bg">
+                                    <div class="licai-bg-gold"></div>
+                                    <div class="licai-bg-gold1"></div>
+                                    <div class="licai-bg-gold2"></div>
+                                    <div class="licai-bg-gold3"></div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                
+                                <div class="licai-bg-arrow"></div>
+                                <div class="rec">
+                                    <p class="rec-title">乾元-私享</p>
+                                    <div class="rec-time">2018-228理财产品</div>
+                                    <div class="rec-bg"></div>
+                                </div>
+                                <div class="interest-bg"></div>
+                                <div class="interest">
+                                    <div class="clip">
+                                        <div class="left-part"></div>
+                                        <div class="right-part width-none"></div>
+                                    </div>                                       
+                                    <p class="interest-per">4.85<span>%</span></p>
+                                    <p class="interest-info">预计年化收益率</p> 
+                                    
+                                </div>
+                                <div class="licai-bg-gold2"></div>
+                                <div class="rec-money-bg"></div>
+                                <div class="rec-money">
+                                    <div class="rec-money-start"><span>100</span>万<br>起购金额</div>
+                                    
+                                </div>
+                                <div class="rec-term-bg"></div>
+                                <div class="rec-term">
+                                    <div class="rec-term-day"><span>185</span>天<br>投资期限</div>
+                                </div>
+                                <div class="licai-bg">
+                                    <div class="licai-bg-gold"></div>
+                                    <div class="licai-bg-gold1"></div>
+                                    <div class="licai-bg-gold2"></div>
+                                    <div class="licai-bg-gold3"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="swiper-container swiper-container-son recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-header">
+                                    <img src="./img/MainScene/cards2/cards2_7.png" class="card-banner">
+                                    <div class="card-title">龙卡途牛旅游卡</div>
+                                </div>
+                                <div class="card-bg">
+                                    <p class="card-bg-item">途牛专属礼遇</p>
+                                    <p class="card-bg-item">特色增值服务</p>
+                                    <p class="card-bg-item">基础平台权益</p>
+                                </div>
+                                <div class="giftBox">
+                                    <div class="giftBox-lf"></div>
+                                    <div class="giftBox-rt"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-header">
+                                    <img src="./img/MainScene/cards2/cards2_29.png" class="card-banner">
+                                    <div class="card-title">LINEFRIENDS粉丝信用卡纯爱版</div>
+                                </div>
+                                <div class="card-bg">
+                                    <p class="card-bg-item">超萌粉丝卡</p>
+                                    <p class="card-bg-item">粉丝专属礼遇</p>
+                                    <p class="card-bg-item">特色增值服务</p>
+                                </div>
+                                <div class="giftBox">
+                                    <div class="giftBox-lf"></div>
+                                    <div class="giftBox-rt"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-header">
+                                    <img src="./img/MainScene/cards2/cards2_10.png" class="card-banner">
+                                    <div class="card-title">全球热购信用卡</div>
+                                </div>
+                                <div class="card-bg">
+                                    <p class="card-bg-item">多重礼遇</p>
+                                    <p class="card-bg-item">特色功能</p>
+                                    <p class="card-bg-item">增值服务</p>
+                                </div>
+                                <div class="giftBox">
+                                    <div class="giftBox-lf"></div>
+                                    <div class="giftBox-rt"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-container swiper-container-son recommend">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="gold-header">
+                                    <img src="./img/MainScene/golds/gold1.png" class="gold-banner">
+                                    <div class="gold-title">投资金条</div>
+                                    <div class="gold-info">材质：Au9999<br> 重量：50g、100g、200g、500g、1000g、5000g<br> 代码：261100101-104、261100106、261100108</div>
+                                </div>
+                                
+                                <div class="gold-bg">
+                                    <p class="gold-bg-item">品质保证，盛世典藏</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gold-header">
+                                    <img src="./img/MainScene/golds/gold2.png" class="gold-banner">
+                                    <div class="gold-title">金元宝</div>
+                                    <div class="gold-info">材质：Au9999<br> 重量：20g、50g、100g、200g和500g<br> 代码：261600101、261600102、261600103、261600104、261600105
+                                    </div>
+                                </div>
+                                <div class="gold-bg">
+                                    <p class="gold-bg-item">财源广进 大利四方</p>   
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gold-header">
+                                    <img src="./img/MainScene/golds/gold28.png" class="gold-banner">
+                                    <div class="gold-title">福豆</div>
+                                    <div class="gold-info">材质：Au9999 <br>重量：5g<br> 代码：261703801、261703802</div>
+                                </div>
+                                <div class="gold-bg">
+                                    <p class="gold-bg-item">幸福安康 阖家幸福</p>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="option">
+            <div class="option-unlike"></div>
+            <div class="option-like"></div>
+        </div>
+        <div class="popup">
+            <div class="popup-unlike">
+                <span class="popup-unlike-percent">15%<br><span>没兴趣</span></span>
+                <span class="popup-unlike-face" id="face1"></span>
+            </div>
+            <div class="popup-like">
+                <span class="popup-like-percent">85%<br><span>感兴趣</span></span>
+                <span class="popup-like-face" id="face2"></span>
+            </div>
+        </div>
+        <div class="change"></div>
+        <div class="closeDec-main"></div>       
+    </div>
+    <div class="details details3">
+        
+        <div class="details-bg">
+            <div class="details-header">
+                <img class="details-banner">
+                <div class="details-title">投资金条</div>
+                <div class="details-info">材质：Au9999 重量：50g、100g、200g、500g、1000g、5000g<br> 代码：261100101-104、261100106、261100108</div>
+            </div>
+            <div class="details-bg-bottom">
+                <p class="details-bg-item">品质保证，盛世典藏</p>
+                
+            </div>
+            <div class="details-close"></div>
+        </div>
+        <div class="robot">
+            <div class="QR-code-bg"></div>
+            <div class="QR-code"></div>
+            <div class="pret pret1">
+                <span class="pret-arr"></span>
+                <span class="pret-msg"></span>
+            </div>
+            <img class="robot-mv">
+
+            <div class="water">
+                <span class="water-item"></span>
+                <span class="water-item"></span>
+                <span class="water-item"></span>
+            </div>
+        </div>
+        <div class="closeDec"></div>
+        <div class="closeDec-robo"></div>
+    </div>
+    <div class="details details2">
+        <div class="details-bg">
+            <div class="details2-header">
+                <img class="details-banner details2-banner">
+                <div class="details-title details2-title">全球热购卡</div>
+            </div>
+            <div class="details-info details2-info">
+                <div class="details2-info-item">特色功能</div>
+                <div class="details2-info-item">全球支付礼遇</div>
+                <div class="details2-info-item">增值服务</div>
+            </div>
+            <div class="giftBox">
+                <div class="giftBox-lf"></div>
+                <div class="giftBox-rt"></div>
+            </div>
+        </div>
+        <div class="robot">
+            <div class="QR-code-bg"></div>
+            <div class="QR-code"></div>
+            <div class="pret pret2">
+                <span class="pret-arr"></span>
+                <span class="pret-msg"></span>
+            </div>
+
+            <img class="robot-mv">
+
+            <div class="water">
+                <span class="water-item"></span>
+                <span class="water-item"></span>
+                <span class="water-item"></span>
+            </div>
+        </div>
+        <div class="closeDec"></div>
+        <div class="closeDec-robo"></div>
+    </div>
+    <div class="details details1">
+        <div class="details-bg">
+            <div class="licai-bg">
+                <div class="licai-bg-arrow"></div>
+                <div class="licai-bg-gold"></div>
+                <div class="licai-bg-gold1"></div>
+                
+                <div class="licai-bg-gold3"></div>
+            </div>
+            <div class="details1-rec">
+                <p class="details1-title">乾元-善盈</p>
+                <p class="details1-time">2018-第174期理财产品</p>
+                <div class="details1-rec-bg"></div>
+            </div>
+            
+            <div class="interest">
+                <div class="clip">
+                    <div class="left-part"></div>
+                    <div class="right-part width-none"></div>
+                </div> 
+                <p class="interest-per">5.45<span>%</span></p>
+                <p class="interest-info">预计年化收益率</p> 
+            </div>
+            <div class="licai-bg-gold2"></div>
+            <div class="details1-money-bg"></div>
+            <div class="details1-money">
+                <div class="details1-money-start"><span>10</span>万<br>起购金额</div>
+                
+            </div>
+            <div class="details1-term-bg"></div>
+            <div class="details1-term">
+                <div class="details1-term-day"><span>142</span>天<br>投资期限</div>
+            </div>
+            <div class="details1-foot">
+               
+            </div>
+            
+                
+            
+        </div>
+        <div class="robot">
+            <div class="QR-code-bg"></div>
+            <div class="QR-code"></div>
+            <div class="pret pret3">
+                <span class="pret-arr"></span>
+                <span class="pret-msg"></span>
+            </div>
+
+            <img class="robot-mv">
+
+            <div class="water">
+                <span class="water-item"></span>
+                <span class="water-item"></span>
+                <span class="water-item"></span>
+            </div>
+        </div>
+        <div class="closeDec"></div>
+        <div class="closeDec-robo"></div>
+    </div>
+    <!-- 点击查看大图 -->
+    <div class="bigImg">
+        <img>
+        <div class="closeImg"></div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/page3.js"></script>
+</body>
+</html>
