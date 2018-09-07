@@ -1,0 +1,198 @@
+组件：
+<template>
+    <div>
+        <div class="ct">1111</div>
+        <ul class="side">
+            <li v-for="(item, i) in arr" @click="saveIdx(i)" :key="i">{{ n }}</li>
+        </ul>
+        <div class="main" v-if="nowIdx === 0"></div>
+        <div class="div2" v-if="nowIdx === 1"></div>
+        </div>
+    </div>
+</template>
+<script>
+export default {
+    data() {
+        return {
+            nowIdx: 0
+        };
+    },
+    methods: {
+        saveIdx(idx) {
+            this.nowIdx = idx;
+        }
+    }
+}
+</script>
+
+路由：
+    {
+      path: '/test2',
+      name: 'Test2',
+      component: Test2
+    }
+
+    methods: {
+        toJump(name) {
+            this.$router.push({ name: name });
+        }
+    }
+
+@click="toJump(shop.comName)"
+
+多层循环
+        test() {
+            var arr = [
+                {
+                    name: 1,
+                    list: [1, 2, 3]
+                },
+                {
+                    name: 1,
+                    list: [4, 2, 3]
+                },
+                {
+                    name: 1,
+                    list: [1, 5, 3]
+                }
+            ];
+            for(let i = 0; i < arr.length; i++) {
+                for(let j = 0; j < arr[i].list.length; j++) {
+                    console.log(arr[i].list[j]);
+                }
+            }
+        }
+
+保存Index
+v-for="(item, i) in option"  :key="i"  @click="saveIdx(i)"
+
+export default {
+    data() {
+        return {
+            nowIdx: 0
+        }
+    },
+    methods: {
+        saveIdx(idx) {
+            this.nowIdx = idx;
+        }
+    }
+}
+
+vue多层循环
+                        <template v-for="child in item.list" >
+                            <div class="show__list-listnm">{{ child.listnm }}</div>
+                            <div class="show__list-cost">{{ child.cost }}</div>
+                            <div class="show__list-current">{{ child.current }}</div>
+                        </template>
+
+箭头函数
+var materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+materials.map(function(material) { 
+  return material.length; 
+}); // [8, 6, 7, 9]
+
+materials.map((material) => {
+  return material.length;
+}); // [8, 6, 7, 9]
+
+materials.map(material => material.length); // [8, 6, 7, 9]
+
+循环type
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].type == type && arr[i].subType == $(this).attr('sub-type')) {
+                obj = arr[i];
+            }
+        }
+
+判断上划下滑
+    $('.sidebar__ct').on('touchstart touchmove touchend', function(e) {
+        var touch = e.originalEvent.targetTouches[0];
+        if(e.type == 'touchstart') {
+            x1 = touch.pageX;
+            y1 = touch.pageY;
+        }
+        else if(e.type == 'touchmove') {
+            x2 = touch.pageX;
+            y2 = touch.pageY;
+            isMove = true;
+        }
+        else if(e.type == 'touchend') {
+                direction1 = Math.abs(x2 - x1), //绝对值
+                direction2 = y2 - y1;
+            //向上滑动
+            if(direction1 < 100 && direction2 < -100 && isMove) {
+                playPre();
+                isMove = false;
+            }
+            //向下滑动
+            else if(direction1 < 100 && direction2 > 100 && isMove) {
+                playNext();
+                isMove = false;
+            }
+        }
+    })
+
+分组json
+    let obj = {};
+    //先分组，将数组添加id 再变成对象
+    for (let i = 0; i < arr.length; i++) {
+        // obj没有该id时，绑上id
+        if (!obj[arr[i].type]) {
+            obj[arr[i].type] = [];
+            // console.log(obj[arr[i].type)
+        }
+        // 如果有id了，直接将该项放进去
+        obj[arr[i].type].push(arr[i]);
+        // console.log(obj[arr[i].type]);
+    }
+
+    //1.遍历对象obj上的每个id（属性id：值{}），用foreach方法
+    Object.keys(obj).forEach(function (key) {
+        let str = '';
+
+        //2. 对每个id的数组 拼装dom
+        for (let i = 0; i < obj[key].length; i++) {
+            // 每项拼装dom
+            str = `
+                <li class="list__group__child" sub-type=${obj[key][i].subType}>
+                    <span class="child-left">${obj[key][i].title}</span>
+                    ${ obj[key][i].desc ? `<span class="child-right">${obj[key][i].desc}</span>` : '' }
+                </li>
+            `;
+
+            // 拼完一次，对符合条件dom挂载一次
+            for (let j = 0; j < $tag.length; j++) { //循环dom
+                if (+$tag.eq(j).attr('type') === +key) {
+                    $tag.eq(j).find('.list__group').append(str);
+                }
+
+            }
+        }
+    });
+
+//距离
+clientWidth: width+padding
+offsetWidth: width+padding+border
+
+过渡
+    .trans_flag {
+        opacity: 0;
+        transition: all .3s;
+    }
+    .fade_flag {
+        opacity: 1!important;
+    }
+    /* 返回按钮过渡动画 */
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+    }

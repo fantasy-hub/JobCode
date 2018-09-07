@@ -1,0 +1,377 @@
+@keyframes scalex {
+    from {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.1);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+@mixin clearfloat {
+    display: block;
+    content: '';
+    clear: both;
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin bgset {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@mixin posit {
+    position: relative;
+    z-index: 2;
+}
+
+// .main {
+//     position: relative;
+//     box-sizing: border-box;
+//     width: $width;
+//     height: 1080px;
+//     background: url('../img/nav/top_icon_bg@3x.png') no-repeat;
+//     background-size: 100% 100%; 
+//     font-family: 'STSongti-SC-Bold';  
+//     color: rgba(39,51,67,1);
+//     overflow: hidden;
+// }
+//用于隐藏打开是的nav滑动
+.hidden {
+    display: none !important;
+}
+
+li, h3, .child-left {
+    font-weight: bold;
+}
+.nav {
+    position: absolute;
+    right: -3.8542rem;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    transition: all .5s;
+    display: flex;
+    font-family: 'STSongti-SC-Bold';
+    &.show-1 {
+        right: -2.0833rem;
+    }
+    &.show-2 {
+        right: 0;
+    }
+}
+.nav__lock {
+    width: 0.3125rem;
+    height: 0.3125rem;
+    margin-top: 0.1042rem;
+    margin-right: 0.0625rem;
+    background-image: url('../img/nav/top_icon_list.svg');
+    @include bgset;
+    
+}
+.close {
+    background-image: url('../img/nav/tap_close.svg');
+}
+.nav__trade {
+    z-index: 1;
+    box-shadow: 0.026rem 0 0.2344rem -0.0365rem rgba(178, 159, 146, 1);
+    height: 5.625rem;
+    box-sizing: border-box;
+    width: 1.7708rem;
+    background:rgba(253,250,247,1);
+    padding-left: 0.0625rem;
+    padding-right: 0.0625rem;
+    overflow-y: auto; 
+    display: block !important;
+}
+.nav__detail {
+    height: 5.625rem;
+    width: 2.0833rem;
+    overflow: hidden;
+    background:rgba(247,240,235,1);
+}
+
+.trade__title {
+    font-size: 0.125rem;
+    font-weight: bold;
+    line-height: 0.1719rem;
+    padding: 0.1875rem 0.5313rem 0.1875rem 0.5729rem;
+    white-space: nowrap;
+}
+.trade__list {
+    transition: .6s height;
+    list-style: none;
+    overflow: hidden;
+    height: 0.4063rem;
+    margin-bottom: 0.0833rem;
+    &.selected {
+        margin-bottom: 0;
+    }
+}
+// .trade__list + .trade__list {
+//     margin-top: 16px;
+// }
+.list__wrap {
+    @include flex;
+    background-image: url('../img/nav/list_bg_rectangle.svg');
+    @include bgset;
+    width: 1.6458rem;
+    height: 0.4063rem;
+    padding: 0.1406rem 0.1667rem 0.1406rem 0.125rem;
+    box-sizing: border-box; 
+
+    &.selected {
+        background-image: url('../img/nav/light_right_button.svg');
+        font-size: 0.0938rem;
+        color: rgba(255,255,255,1);
+    }
+}
+.list__head {
+    font-size: 0.0938rem;
+    line-height: 0.1302rem;
+}
+.list__icon {
+    width: 0.0469rem;
+    height: 0.0781rem;
+    background-image: url('../img/nav/top_arrow_down.svg');
+    @include bgset;
+    transition: .5s all;
+    &.active {
+        background-image: url('../img/nav/up_arrow.svg');
+        color: rgba(255,255,255,1);
+    }
+}
+
+// .list__group {
+//     display: none;
+// }
+.list__group__child {
+    padding-left: 0.125rem;
+    line-height: 0.3229rem;
+    border-bottom: 0.0052rem solid rgba(39,51,67,.2);
+    font-size: 0.0833rem;
+    @include flex;
+    &.relevant {
+        background: linear-gradient(90deg,rgba(236,196,143,0),rgba(212,146,86,0.08),rgba(214,151,91,0.08),rgba(212,146,86,0));
+    }
+}
+.child-right {
+    width: 0.3854rem;
+    height: 0.1458rem;
+    font-size: 0.0417rem;
+    color: rgba(212,146,86,1);
+    line-height: 0.1458rem;
+    text-align: center;
+    background-image: url('../img/nav/button_book.svg');
+    @include bgset;
+}
+.list__group__child:last-child {
+    border-bottom: inherit;
+}
+
+
+@mixin fhicon {
+    width: 0.3125rem;
+    height: 0.3125rem;
+    background: url('../img/nav/top_left_button.svg') no-repeat;
+    background-size: cover;
+}
+@mixin font {
+    font-size: 0.0677rem;
+    line-height: 0.0938rem;
+}
+@mixin detailflex {
+    display: flex;
+    align-items: center;
+}
+.nav__detail__head {
+    margin-bottom: 0.0417rem;
+}
+.detail__icon {
+    @include flex;
+    position: relative;
+ 
+    // width: 100%;
+    // height: 100px;
+    padding: 0.1042rem 0.1198rem 0.1042rem 0.1042rem;
+}
+.icon-bg {
+    position: absolute;
+    z-index: 1;
+    left: 0.2448rem;
+    width: 0.4479rem;
+    height: 0.0885rem;
+    background-image: url('../img/nav/top_middle_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: 1.2s scalex infinite linear;
+}
+.icon-left {
+    @include fhicon;
+    @include posit;
+}
+.icon-right {
+    @include fhicon;
+    @include posit;
+    margin-left: -0.9375rem;
+}
+.icon-close {
+    width: 0.1042rem;
+    height: 0.1042rem;
+    background: url('../img/nav/top_icon_close.svg') no-repeat;
+    background-size: contain;
+}
+.detail__img {
+    width: 2.0833rem;
+    height: 1.3958rem;
+    background-image: url('../img/nav/middle_book_picture@3x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detail__open {
+    padding: 0.1042rem 0.3281rem 0.0833rem 0.1042rem;
+    background:rgba(255,255,255,0.7);    
+}
+.open__name {
+    font-size: 0.125rem;
+    line-height: 0.1719rem;
+    font-weight: bold;
+}
+.open__wrap {
+    @include flex;
+    @include font;
+    padding-top: 0.0677rem;
+}
+.open__intro {
+    @include detailflex;
+    font-family: 'PingFang-SC-Regular';
+    .intro__icon {
+        width: 0.0833rem;
+        height: 0.0833rem;
+        padding-right: 0.0313rem;
+    }
+}
+.open__phone {
+    @include detailflex;
+    font-family: 'PingFang-SC-Regular';
+    .phone__icon {
+        width: 0.0938rem;
+        height: 0.0938rem;
+        padding-right: 0.0313rem;
+    }
+}
+.nav__deatail__content {
+    padding: 0.1042rem;
+    margin-bottom: 0.0417rem;
+    background:rgba(255,255,255,0.7);
+}
+.detail__address {
+    @include detailflex;
+    padding-bottom: 0.1042rem;
+    .address__icon {
+        width: 0.0729rem;
+        height: 0.0885rem;
+        padding-right: 0.0313rem;
+
+    }
+    .address__text {
+        @include font;
+    }
+}
+.detail__map {
+    width: 1.875rem;
+    height: 1.0417rem;
+    background-image: url('../img/nav/middle_map@3x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav__detail__footer {
+    background:rgba(255,255,255,0.6);
+    padding: 0.1094rem 0 0.1198rem 0.1042rem;
+}
+.detail__promotion {
+    display: flex;
+    padding-bottom: 0.1042rem;
+    .promotion__icon {
+        width: 0.0729rem;
+        height: 0.0781rem;
+        padding-right: 0.0365rem;
+    }
+    .promotion__text {
+        @include font;
+        font-family:' PingFangSC-Regular';
+        color: rgba(39,51,67,1);
+    }
+}
+.detail__coupon {
+    display: flex;
+    width: 2.6042rem;
+    overflow: hidden;
+    .coupon {
+        width: 1.0833rem;
+        height: 0.375rem;
+        margin-bottom: 0.1667rem;
+        margin-right: 0.1042rem;
+        background-image: url('../img/Popup/top_coupon_bg@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex;
+    }
+}
+.coupon__left {
+    padding-left: 0.0573rem;
+    font-size: 0.0625rem;
+    .coupon__money {
+        font-size: 0.1458rem;
+        font-family: 'DINAlternate-Bold';
+        color: rgba(255,32,71,1);
+        line-height: 0.1667rem;
+    }
+}
+.coupon__intro {
+    font-size: 0.0625rem;
+    line-height: 0.0938rem;
+    padding-right: 0.0885rem;
+    .coupon__condition {
+        font-size: 0.0729rem;
+    }
+}
+.detail__code {
+    @include flex;
+    .code__text {
+        font-size: 0.0677rem;
+        font-family: 'PingFangSC-Regular';
+        color: rgba(39,51,67,1);
+        line-height: 0.125rem;
+        margin-left: 0.2969rem;
+    }
+    .code__bg {
+        width: 0.6875rem;
+        height: 0.6875rem;
+        box-sizing: border-box;
+        padding: 0.0573rem;
+        background: url('../img/Popup/Details_QR2@2x.png') no-repeat;
+        background-size: cover;
+        margin-right: 0.099rem;
+        margin-bottom: 0.1198rem;
+        .code__img {
+            width: 0.5729rem;
+            height: 0.5729rem;
+            background-image: url('../img/nav/buttom_bigQR1@3x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+/* swiper 样式设置*/
+.swiper-wrapper {
+    overflow: hidden;
+}
+.swiper-slide {
+    width: 1.0833rem;
+    height: 0.375rem;
+}
